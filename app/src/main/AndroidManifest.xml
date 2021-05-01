@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterNetSelectionActivity"></activity>
+        <activity android:name=".EzyPesaNumVerificationActivity"></activity>
+        <activity android:name=".TPesaNumVerificationActivity" />
+        <activity android:name=".MPesaNumVerificationActivity" />
+        <activity android:name=".HaloPesaNumVerificationActivity" />
+        <activity android:name=".AirtelMoneyNumVerificationActivity" />
+        <activity android:name=".RegisterNetSelectionActivity" />
         <activity android:name=".TigoPesaNumVerificationActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".EzyPesaActivity" />

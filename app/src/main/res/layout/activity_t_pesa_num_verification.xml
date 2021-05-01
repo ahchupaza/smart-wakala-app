@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".TigoPesaNumVerificationActivity">
+    tools:context=".TPesaNumVerificationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,20 +16,20 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/TigoPesaNumToBeRegistered"
+            android:id="@+id/TPesaNumToBeRegistered"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
-            android:hint="@string/tigopesa_number_to_be_registered"
+            android:hint="@string/tpesa_number_to_be_registered"
             android:importantForAutofill="no"
             android:inputType="number"
-            tools:text="@string/tigopesa_number_to_be_registered" />
+            tools:text="@string/tpesa_number_to_be_registered" />
 
         <Button
-            android:id="@+id/tigopesa_num_verification_endelea_button"
+            android:id="@+id/tpesa_num_verification_endelea_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
