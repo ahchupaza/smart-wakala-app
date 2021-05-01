@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lukusmart_background2"
+    android:fillViewport="true"
+    tools:context=".UserRegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/terms_and_conditions_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/read_terms_and_conditions"
+            tools:text="@string/read_terms_and_conditions"
+            android:textStyle="bold"
+            android:textColor="@color/colorWarning"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/user_register_username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:text="@string/user_register_username" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/user_register_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:text="@string/user_register_password" />
+
+        <EditText
+            android:id="@+id/register_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/user_register_confirm_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:text="@string/user_register_confirm_password" />
+
+        <EditText
+            android:id="@+id/user_register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/user_register_email"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:text="@string/user_register_email"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/user_register_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/user_register_contact"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:text="@string/user_register_contact" />
+
+        <TextView
+            android:id="@+id/user_agreement_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_agreement_to_privacy_policy"
+            android:textColor="@color/colorWarning"
+            android:textColorLink="#070707"
+            android:textSize="13sp"
+            tools:text="@string/user_agreement_to_privacy_policy" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_edges_button"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:text="@string/register"/>
+
+    </LinearLayout>
+
+</ScrollView>

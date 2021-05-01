@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".LoginActivity">
+    tools:context=".TwoFactorAuthenticationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,37 +15,39 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/login_username"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/two_factor_authentication_notification"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="24dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
             android:gravity="center_horizontal"
-            android:ems="10"
-            android:hint="@string/user_login_username"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            tools:text="@string/user_login_username" />
+            android:text="@string/two_factor_authentication_notification"
+            android:textColor="@color/colorWarning"
+            android:textColorLink="#070707"
+            android:textSize="13sp"
+            tools:text="@string/two_factor_authentication_notification" />
 
         <EditText
-            android:id="@+id/login_password"
-            android:layout_width="wrap_content"
+            android:id="@+id/code_sent_to_user_phone"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:gravity="center_horizontal"
             android:ems="10"
-            android:hint="@string/user_login_password"
+            android:hint="@string/code_sent_to_users_phone"
             android:importantForAutofill="no"
-            android:inputType="textPassword"
-            tools:text="@string/user_login_password" />
+            android:inputType="number"
+            tools:text="@string/code_sent_to_users_phone" />
 
         <Button
-            android:id="@+id/login_button"
-            android:layout_width="wrap_content"
+            android:id="@+id/submit_users_code_button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="50dp"
@@ -55,19 +57,6 @@
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
             android:textSize="15sp"
-            android:text="@string/login"/>
-
-        <TextView
-            android:id="@+id/wakala_register_text"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
-            android:text="@string/register_here"
-            android:textStyle="bold"
-            android:textColor="@color/colorWarning"
-            android:textSize="16sp" />
-
+            android:text="@string/submit_users_code"/>
     </LinearLayout>
-
 </ScrollView>

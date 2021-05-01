@@ -9,7 +9,7 @@
     tools:context=".AirtelMoneyActivity">
 
     <ScrollView
-        android:id="@+id/airtel_money_layout"
+        android:id="@+id/airtelmoney_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:id="@+id/airtel_money_linear_layout"
+            android:id="@+id/airtelmoney_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

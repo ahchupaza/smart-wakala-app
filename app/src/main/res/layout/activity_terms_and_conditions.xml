@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".TpesaActivity">
+    tools:context=".TermsAndConditionsActivity">
 
     <ScrollView
-        android:id="@+id/tpesa_layout"
+        android:id="@+id/halo_pesa_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:id="@+id/tpesa_linear_layout"
+            android:id="@+id/halo_pesa_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

@@ -21,7 +21,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:text="@string/choose_network"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"/>
 
