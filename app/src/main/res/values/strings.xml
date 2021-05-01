@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SmartWakala</string>
+    <string name="need_help_text">Msaada?</string>
+    <string name="choose_network">CHAGUA MTANDAO</string>
+    <string name="continue_to">Endelea</string>
+    <string name="login">Ingia</string>
+    <string name="endelea">Endelea</string>
+    <string name="register">Jisajili hapa!</string>
+    <string name="namba_ya_wakala">Namba ya wakala</string>
+    <string name="chagua_namba_ya_wakala">Chagua namba ya wakala</string>
+    <string name="numbers">numbers</string>
+    <string name="user_username">Username</string>
+    <string name="tigopesa_number_to_be_registered">Ingiza namba ya TigoPesa wakala</string>
+    <string name="airtelmoney_number_to_be_registered">Ingiza namba ya AirtelMoney wakala</string>
+    <string name="halopesa_number_to_be_registered">Ingiza namba ya HaloPesa wakala</string>
+    <string name="mpesa_number_to_be_registered">Ingiza namba ya M-Pesa wakala</string>
+    <string name="tpesa_number_to_be_registered">Ingiza namba ya T-Pesa wakala</string>
+    <string name="ezypesa_number_to_be_registered">Ingiza namba ya EzyMoney wakala</string>
+    <string name="user_password">Password</string>
+    <string name="ingiza_umeme">Ingiza umeme sasa</string>
+    <string name="ndiyo">Ndiyo</string>
+    <string name="hapana">Hapana</string>
+    <string name="kiasi">Kiasi cha pesa</string>
+</resources>
