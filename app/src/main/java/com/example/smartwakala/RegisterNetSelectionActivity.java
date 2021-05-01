@@ -34,8 +34,8 @@ public class RegisterNetSelectionActivity extends AppCompatActivity {
         airtelMoneyButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToAirtelMoney = new Intent(RegisterNetSelectionActivity.this, AirtelMoneyActivity.class);
-                startActivity(goToAirtelMoney);
+                Intent goToAirtelMoneyNumVerification = new Intent(RegisterNetSelectionActivity.this, AirtelMoneyNumVerificationActivity.class);
+                startActivity(goToAirtelMoneyNumVerification);
             }
         });
 
@@ -43,8 +43,8 @@ public class RegisterNetSelectionActivity extends AppCompatActivity {
         haloPesaButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToHaloPesa = new Intent(RegisterNetSelectionActivity.this, HaloPesaActivity.class);
-                startActivity(goToHaloPesa);
+                Intent goToHaloPesaNumVerification = new Intent(RegisterNetSelectionActivity.this, HaloPesaNumVerificationActivity.class);
+                startActivity(goToHaloPesaNumVerification);
             }
         });
 
@@ -52,8 +52,8 @@ public class RegisterNetSelectionActivity extends AppCompatActivity {
         mPesaButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToMPesa = new Intent(RegisterNetSelectionActivity.this, MpesaActivity.class);
-                startActivity(goToMPesa);
+                Intent goToMPesaNumVerification = new Intent(RegisterNetSelectionActivity.this, MPesaNumVerificationActivity.class);
+                startActivity(goToMPesaNumVerification);
             }
         });
 
@@ -61,8 +61,8 @@ public class RegisterNetSelectionActivity extends AppCompatActivity {
         tPesaButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTPesa = new Intent(RegisterNetSelectionActivity.this, TpesaActivity.class);
-                startActivity(goToTPesa);
+                Intent goToTPesaNumVerification = new Intent(RegisterNetSelectionActivity.this, TPesaNumVerificationActivity.class);
+                startActivity(goToTPesaNumVerification);
             }
         });
 
@@ -70,8 +70,8 @@ public class RegisterNetSelectionActivity extends AppCompatActivity {
         ezyPesaButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToEzyPesa = new Intent(RegisterNetSelectionActivity.this, EzyPesaActivity.class);
-                startActivity(goToEzyPesa);
+                Intent goToEzyPesaNumVerification = new Intent(RegisterNetSelectionActivity.this, EzyPesaNumVerificationActivity.class);
+                startActivity(goToEzyPesaNumVerification);
             }
         });
     }
