@@ -28,21 +28,23 @@
             android:text="@string/two_factor_authentication_notification"
             android:textColor="@color/colorWarning"
             android:textColorLink="#070707"
-            android:textSize="13sp"
+            android:textSize="17sp"
             tools:text="@string/two_factor_authentication_notification" />
 
         <EditText
             android:id="@+id/code_sent_to_user_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
             android:gravity="center_horizontal"
             android:ems="10"
             android:hint="@string/code_sent_to_users_phone"
             android:importantForAutofill="no"
-            android:inputType="number"
+            android:inputType="phone"
             tools:text="@string/code_sent_to_users_phone" />
 
         <Button
@@ -57,6 +59,7 @@
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
             android:textSize="15sp"
-            android:text="@string/submit_users_code"/>
+            android:text="@string/submit_users_code"
+            android:hapticFeedbackEnabled="true"/>
     </LinearLayout>
 </ScrollView>
