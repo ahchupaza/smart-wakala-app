@@ -31,7 +31,7 @@
             tools:text="@string/halopesa_number_to_be_registered" />
 
         <Button
-            android:id="@+id/halopesa_num_verification_endelea_button"
+            android:id="@+id/halopesa_num_verification_hakiki_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -43,7 +43,8 @@
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
             android:textSize="15sp"
-            android:text="@string/endelea"/>
+            android:text="@string/confirm_number"
+            android:hapticFeedbackEnabled="true"/>
 
     </LinearLayout>
 
