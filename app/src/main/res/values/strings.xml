@@ -30,8 +30,9 @@
     <string name="user_register_contact">Simu ya mawasiliano</string>
     <string name="is_information_correct">Je, taarifa hizo ni sahihi kuhusu wewe?</string>
     <string name="read_terms_and_conditions">Soma vigezo na masharti!</string>
+    <string name="enter_login_credentials">JAZA TAARIFA ZAKO</string>
     <string name="user_agreement_to_privacy_policy">Kwa kubonyeza kitufe cha kujisajili, 
-        unathibitisha ya kwamba umekubali vigezo na masharti ya kutumia huduma hii.</string>
+        unathibitisha kwamba umekubali vigezo na masharti ya kutumia huduma hii.</string>
     <string name="two_factor_authentication_notification">Tumekutumia SMS kwenye simu yako, yenye tarakimu sita.
         Tafadhali ingiza namba hiyo hapo chini ili kukamilisha usajili wako.</string>
     <string name="yes">Ndiyo</string>
@@ -59,6 +60,6 @@
         Kujua mwenendo wa biashara.</string>
     <string name="congratulations">Hongera..!!</string>
     <string name="you_are_successfully_registered">Umefanikiwa kujisajili katika mfumo wa
-    SmartWakala App. Tafadhali bofya kitufe hapo chini na ujaze taarifa zako, ili kuingia kwenye mfumo.</string>
+    SmartWakala App. Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingia kwenye mfumo.</string>
 
 </resources>

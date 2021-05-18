@@ -15,11 +15,27 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/login_page_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/enter_login_credentials"
+            tools:text="@string/enter_login_credentials"
+            android:textStyle="bold"
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp" />
+
         <EditText
             android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="60dp"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginEnd="50dp"
