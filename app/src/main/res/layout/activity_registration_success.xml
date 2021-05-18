@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".TwoFactorAuthenticationActivity">
+    tools:context=".RegisterNetSelectionActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,39 +16,40 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/two_factor_authentication_notification"
-            android:layout_width="match_parent"
+            android:id="@+id/congratulations_text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:paddingLeft="4dp"
-            android:paddingRight="4dp"
-            android:gravity="center_horizontal"
-            android:text="@string/two_factor_authentication_notification"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/congratulations"
+            tools:text="@string/congratulations"
+            android:textStyle="bold"
             android:textColor="@color/colorWarning"
-            android:textColorLink="#070707"
-            android:textSize="17sp"
-            tools:text="@string/two_factor_authentication_notification" />
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/code_sent_to_user_phone"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/successfully_registered_note"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
-            android:ems="10"
-            android:hint="@string/code_sent_to_users_phone"
-            android:importantForAutofill="no"
-            android:inputType="phone"
-            tools:text="@string/code_sent_to_users_phone" />
+            android:text="@string/you_are_successfully_registered"
+            tools:text="@string/you_are_successfully_registered"
+            android:textStyle=""
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/user_otp_submit_button"
+            android:id="@+id/reg_success_ok_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -59,8 +60,9 @@
             android:layout_marginRight="50dp"
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
-            android:textSize="15sp"
-            android:text="@string/submit_users_code"
-            android:hapticFeedbackEnabled="true"/>
+            android:textSize="18sp"
+            android:text="@string/ok"/>
+
     </LinearLayout>
+
 </ScrollView>

@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".EzyPesaAgentInfoConfirmationActivity"></activity>
+        <activity android:name=".RegistrationSuccessActivity"></activity>
+        <activity android:name=".UserHelpActivity" />
+        <activity android:name=".EzyPesaAgentInfoConfirmationActivity" />
         <activity android:name=".TPesaAgentInfoConfirmationActivity" />
         <activity android:name=".MPesaAgentInfoConfirmationActivity" />
         <activity android:name=".HaloPesaAgentInfoConfirmationActivity" />
@@ -30,11 +32,10 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".EzyPesaActivity" />
         <activity android:name=".LoginNetSelectionActivity" />
-        <activity android:name=".HelpActivity" />
         <activity android:name=".HaloPesaActivity" />
-        <activity android:name=".TpesaActivity" />
+        <activity android:name=".TPesaActivity" />
         <activity android:name=".AirtelMoneyActivity" />
-        <activity android:name=".MpesaActivity" />
+        <activity android:name=".MPesaActivity" />
         <activity android:name=".TigoPesaActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

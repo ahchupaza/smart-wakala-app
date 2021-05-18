@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".MpesaActivity">
+    tools:context=".MPesaActivity">
 
     <ScrollView
         android:id="@+id/mpesa_layout"

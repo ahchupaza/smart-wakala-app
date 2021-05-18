@@ -6,6 +6,7 @@
     <string name="continue_to">Endelea</string>
     <string name="i_confirm">Endelea</string>
     <string name="register">Jisajili</string>
+    <string name="ok">Sawa</string>
     <string name="login">Ingia</string>
     <string name="code_sent_to_users_phone">Ingiza namba</string>
     <string name="endelea">Endelea</string>
@@ -28,7 +29,7 @@
     <string name="user_register_email">Barua pepe</string>
     <string name="user_register_contact">Simu ya mawasiliano</string>
     <string name="is_information_correct">Je, taarifa hizo ni sahihi kuhusu wewe?</string>
-    <string name="read_terms_and_conditions">Tafadhali soma vigezo na masharti!</string>
+    <string name="read_terms_and_conditions">Soma vigezo na masharti!</string>
     <string name="user_agreement_to_privacy_policy">Kwa kubonyeza kitufe cha kujisajili, 
         unathibitisha ya kwamba umekubali vigezo na masharti ya kutumia huduma hii.</string>
     <string name="two_factor_authentication_notification">Tumekutumia SMS kwenye simu yako, yenye tarakimu sita.
@@ -46,4 +47,18 @@
     <string name="tin_no._label">TIN No:</string>
     <string name="licence_no._label">Leseni No:</string>
     <string name="agent_business_region_label">Mkoa wa biashara:</string>
+    <string name="about_smartwakala_app_text">Kuhusu SmartWakala App</string>
+    <string name="about_smartwakala_app_note">Karibu kwenye App ya SmartWakala. App hii ni maalum
+    kwa ajili ya kuwasaidia mawakala wa mitandao ya simu nchini Tanzania kufanya miamala yao kwa
+    urahsi na ufanisi. Miamala yote itafanyika kupitia App hii tu bila uhitaji wa kuwa na simu ya ziada.
+        Unachotakiwa kufanya ni kufuata hatua chache na rahisi za kujisajili ili uweze kunufaika na huduma za App hii.
+        Ama kama wewe tayari umeshajisajili, tafadhali ingiza taarifa zako kwa usahihi ili kuingia kwenye mfumo huu.
+    Tafadhali hakikisha ya kwamba unatunza password yako na haumtajii mtu mwingine usiemwamini.</string>
+    <string name="available_services_text">Huduma za SmartWakala</string>
+    <string name="available_services_note">Kufanya miamala, Kupata taarifa za miamala na Kupata takwimu za miamala,
+        Kujua mwenendo wa biashara.</string>
+    <string name="congratulations">Hongera..!!</string>
+    <string name="you_are_successfully_registered">Umefanikiwa kujisajili katika mfumo wa
+    SmartWakala App. Tafadhali bofya kitufe hapo chini na ujaze taarifa zako, ili kuingia kwenye mfumo.</string>
+
 </resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lukusmart_background2"
+    android:fillViewport="true"
+    tools:context=".UserHelpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_smartwakala_app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/about_smartwakala_app_text"
+            tools:text="@string/about_smartwakala_app_text"
+            android:textStyle="bold"
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/about_smartwakala_app_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/about_smartwakala_app_note"
+            tools:text="@string/about_smartwakala_app_note"
+            android:textStyle=""
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/available_services_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/available_services_text"
+            tools:text="@string/available_services_text"
+            android:textStyle="bold"
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/available_services_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/available_services_note"
+            tools:text="@string/available_services_note"
+            android:textStyle=""
+            android:textColor="@color/colorWarning"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/user_help_ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_edges_button"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="@string/ok"/>
+
+    </LinearLayout>
+
+</ScrollView>

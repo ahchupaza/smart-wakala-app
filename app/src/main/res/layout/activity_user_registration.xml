@@ -21,11 +21,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:text="@string/read_terms_and_conditions"
             tools:text="@string/read_terms_and_conditions"
             android:textStyle="bold"
             android:textColor="@color/colorWarning"
-            android:textSize="17sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/user_register_contact"
@@ -113,15 +117,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:paddingLeft="4dp"
-            android:paddingRight="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
             android:text="@string/user_agreement_to_privacy_policy"
             android:textColor="@color/colorWarning"
             android:textColorLink="#070707"
-            android:textSize="17sp"
+            android:textSize="18sp"
             tools:text="@string/user_agreement_to_privacy_policy" />
 
         <Button
