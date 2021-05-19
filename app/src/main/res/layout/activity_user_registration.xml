@@ -28,7 +28,7 @@
             android:text="@string/read_terms_and_conditions"
             tools:text="@string/read_terms_and_conditions"
             android:textStyle="bold"
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textSize="18sp" />
 
         <EditText
@@ -123,7 +123,7 @@
             android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
             android:text="@string/user_agreement_to_privacy_policy"
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textColorLink="#070707"
             android:textSize="18sp"
             tools:text="@string/user_agreement_to_privacy_policy" />

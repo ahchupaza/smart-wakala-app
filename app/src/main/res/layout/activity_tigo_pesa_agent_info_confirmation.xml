@@ -230,7 +230,7 @@
                 android:paddingRight="4dp"
                 android:gravity="center_horizontal"
                 android:text="@string/is_information_correct"
-                android:textColor="@color/colorWarning"
+                android:textColor="@color/colorDanger"
                 android:textColorLink="#070707"
                 android:textSize="18sp"
                 tools:text="@string/is_information_correct" />

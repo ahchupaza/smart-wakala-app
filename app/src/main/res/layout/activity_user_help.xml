@@ -28,7 +28,7 @@
             android:text="@string/about_smartwakala_app_text"
             tools:text="@string/about_smartwakala_app_text"
             android:textStyle="bold"
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textSize="18sp" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:text="@string/about_smartwakala_app_note"
             tools:text="@string/about_smartwakala_app_note"
             android:textStyle=""
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textSize="18sp" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:text="@string/available_services_text"
             tools:text="@string/available_services_text"
             android:textStyle="bold"
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textSize="18sp" />
 
         <TextView
@@ -78,7 +78,7 @@
             android:text="@string/available_services_note"
             tools:text="@string/available_services_note"
             android:textStyle=""
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textSize="18sp" />
 
         <Button
