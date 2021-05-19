@@ -9,13 +9,19 @@
     <string name="ok">Sawa</string>
     <string name="login">Ingia</string>
     <string name="code_sent_to_users_phone">Ingiza namba</string>
+    <string name="password_reset_code_sent_to_users_phone">Kutoka kwenye SMS</string>
+    <string name="password_reset_code_sent_to_users_email">Kutoka kwenye Email</string>
     <string name="endelea">Endelea</string>
     <string name="confirm_number">Hakiki namba</string>
+    <string name="confirm_account">Hakiki Akaunti</string>
     <string name="submit_users_code">Wasilisha namba</string>
-    <string name="register_here">Jisajili hapa!</string>
+    <string name="submit_users_new_password">Wasilisha Ombi</string>
+    <string name="forgot_password">Nimesahau password yangu!</string>
+    <string name="register_here">Mtumiaji mpya? Jisajili hapa!</string>
     <string name="chagua_aina_ya_muamala">Chagua aina ya muamala</string>
     <string name="numbers">numbers</string>
     <string name="tigopesa_number_to_be_registered">Ingiza namba ya TigoPesa</string>
+    <string name="user_account_to_be_verified">Username</string>
     <string name="airtelmoney_number_to_be_registered">Ingiza namba ya AirtelMoney</string>
     <string name="halopesa_number_to_be_registered">Ingiza namba ya HaloPesa</string>
     <string name="mpesa_number_to_be_registered">Ingiza namba ya M-Pesa</string>
@@ -25,7 +31,9 @@
     <string name="user_login_password">Password</string>
     <string name="user_register_username">Username</string>
     <string name="user_register_password">Password</string>
-    <string name="user_register_confirm_password">Confirm Password</string>
+    <string name="confirm_user_register_password">Confirm Password</string>
+    <string name="user_reset_password">Password mpya</string>
+    <string name="confirm_user_reset_password">Rudia password mpya</string>
     <string name="user_register_email">Barua pepe</string>
     <string name="user_register_contact">Simu ya mawasiliano</string>
     <string name="is_information_correct">Je, taarifa hizo ni sahihi kuhusu wewe?</string>
@@ -35,6 +43,10 @@
         unathibitisha kwamba umekubali vigezo na masharti ya kutumia huduma hii.</string>
     <string name="two_factor_authentication_notification">Tumekutumia SMS kwenye simu yako, yenye tarakimu sita.
         Tafadhali ingiza namba hiyo hapo chini ili kukamilisha usajili wako.</string>
+    <string name="password_reset_codes_request_notification">Tumekutumia SMS kwenye simu yako pamoja na barua pepe kwenye anwani yako,
+        zenye tarakimu sita. Tafadhali ingiza namba hizo hapo chini ili kuunda password mpya.</string>
+    <string name="password_reset_notification">Tafadhali unda password yako mpya, yenye mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo
+        kwa pamoja visipungue nane (8) kwa ajili ya usalama zaidi a akaunti yako.</string>
     <string name="yes">Ndiyo</string>
     <string name="no">Hapana</string>
     <string name="choice_1">Chaguo no. 1</string>
@@ -60,15 +72,21 @@
     <string name="about_smartwakala_app_text">Kuhusu SmartWakala App</string>
     <string name="about_smartwakala_app_note">Karibu kwenye App ya SmartWakala. App hii ni maalum
     kwa ajili ya kuwasaidia mawakala wa mitandao ya simu nchini Tanzania kufanya miamala yao kwa
-    urahsi na ufanisi. Miamala yote itafanyika kupitia App hii tu bila uhitaji wa kuwa na simu ya ziada.
-        Unachotakiwa kufanya ni kufuata hatua chache na rahisi za kujisajili ili uweze kunufaika na huduma za App hii.
-        Ama kama wewe tayari umeshajisajili, tafadhali ingiza taarifa zako kwa usahihi ili kuingia kwenye mfumo huu.
-    Tafadhali hakikisha ya kwamba unatunza password yako na haumtajii mtu mwingine usiemwamini.</string>
+    urahsi na ufanisi. Miamala yote itafanyika kupitia App hii tu bila uhitaji wa kuwa na simu nyingine ya ziada.</string>
     <string name="available_services_text">Huduma za SmartWakala</string>
     <string name="available_services_note">Kufanya miamala, Kupata taarifa za miamala na Kupata takwimu za miamala,
         Kujua mwenendo wa biashara.</string>
+    <string name="how_to_register_text">Jinsi ya Kujisajili</string>
+    <string name="how_to_register_note">Fuata hatua hizi chache na rahisi za kujisajili ili uweze kunufaika na huduma za App hii.
+        Kwenye "Username", unda ki-jina chako cha kipekee ambacho kitakutambulisha wewe na kukutofautisha na mawakala wengine.
+        Kwenye "Password", unda neno-siri lako litakalokuwa kama ufunguo wa kuingilia kwenye mfumo huu wa SmartWakala.
+        Hakikisha kwamba password yako ina mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo kwa pamoja visipungue nane (8)
+        kwa ajili ya usalama zaidi wa akaunti yako. Tafadhali itunze password yako na usimwambie mtu mwingine yeyote usiemwamini.
+        Ama kama wewe tayari umeshajisajili, tafadhali ingiza taarifa zako kwa usahihi ili kuingia kwenye mfumo huu.</string>
     <string name="congratulations">Hongera..!!</string>
     <string name="you_are_successfully_registered">Umefanikiwa kujisajili katika mfumo wa
-    SmartWakala App. Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingia kwenye mfumo.</string>
+    SmartWakala App. Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
+    <string name="you_have_successfully_reset_your_password">Umefanikiwa kuunda password yako mpya.
+        Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
 
 </resources>

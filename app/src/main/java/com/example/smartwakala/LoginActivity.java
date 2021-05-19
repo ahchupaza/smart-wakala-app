@@ -12,6 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
     Button loginButton;
     TextView registerText;
+    TextView forgotPasswordText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +28,21 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        registerText = (TextView) findViewById(R.id.wakala_register_text);
+        registerText = (TextView) findViewById(R.id.user_register_text);
         registerText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent goToRegisterNetSelectionActivity = new Intent(LoginActivity.this, RegisterNetSelectionActivity.class);
                 startActivity(goToRegisterNetSelectionActivity);
+            }
+        });
+
+        forgotPasswordText = (TextView) findViewById(R.id.user_forgot_password_text);
+        forgotPasswordText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToForgotPasswordActivity = new Intent(LoginActivity.this, AccountVerificationActivity.class);
+                startActivity(goToForgotPasswordActivity);
             }
         });
 

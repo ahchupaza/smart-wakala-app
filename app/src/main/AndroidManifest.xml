@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".RegistrationSuccessActivity"></activity>
+        <activity android:name=".AccountVerificationActivity"></activity>
+        <activity android:name=".PasswordResetSuccessActivity" />
+        <activity android:name=".PasswordResetActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".RegistrationSuccessActivity" />
         <activity android:name=".UserHelpActivity" />
         <activity android:name=".EzyPesaAgentInfoConfirmationActivity" />
         <activity android:name=".TPesaAgentInfoConfirmationActivity" />
