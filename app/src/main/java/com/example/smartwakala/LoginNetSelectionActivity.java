@@ -52,7 +52,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         mPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToMPesa = new Intent(LoginNetSelectionActivity.this, MpesaActivity.class);
+                Intent goToMPesa = new Intent(LoginNetSelectionActivity.this, MPesaActivity.class);
                 startActivity(goToMPesa);
             }
         });
@@ -61,7 +61,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         tPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTPesa = new Intent(LoginNetSelectionActivity.this, TpesaActivity.class);
+                Intent goToTPesa = new Intent(LoginNetSelectionActivity.this, TPesaActivity.class);
                 startActivity(goToTPesa);
             }
         });

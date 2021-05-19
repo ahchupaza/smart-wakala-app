@@ -54,7 +54,7 @@
             android:text="@string/continue_to"/>
 
         <TextView
-            android:id="@+id/admin_help_text"
+            android:id="@+id/user_help_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -62,7 +62,7 @@
             android:text="@string/need_help_text"
             tools:text="@string/need_help_text"
             android:textStyle="bold"
-            android:textColor="@color/colorWarning"
+            android:textColor="@color/colorDanger"
             android:textSize="17sp" />
 
     </LinearLayout>

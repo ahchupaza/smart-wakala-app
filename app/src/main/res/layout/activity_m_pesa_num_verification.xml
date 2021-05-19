@@ -24,6 +24,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"
             android:ems="10"
             android:hint="@string/mpesa_number_to_be_registered"
             android:importantForAutofill="no"
@@ -31,7 +32,7 @@
             tools:text="@string/mpesa_number_to_be_registered" />
 
         <Button
-            android:id="@+id/mpesa_num_verification_endelea_button"
+            android:id="@+id/mpesa_num_verification_hakiki_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -43,7 +44,8 @@
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
             android:textSize="15sp"
-            android:text="@string/endelea"/>
+            android:text="@string/confirm_number"
+            android:hapticFeedbackEnabled="true"/>
 
     </LinearLayout>
 
