@@ -13,7 +13,7 @@
     <string name="confirm_number">Hakiki namba</string>
     <string name="submit_users_code">Wasilisha namba</string>
     <string name="register_here">Jisajili hapa!</string>
-    <string name="chagua_namba_ya_wakala">Chagua namba ya wakala</string>
+    <string name="chagua_aina_ya_muamala">Chagua aina ya muamala</string>
     <string name="numbers">numbers</string>
     <string name="tigopesa_number_to_be_registered">Ingiza namba ya TigoPesa</string>
     <string name="airtelmoney_number_to_be_registered">Ingiza namba ya AirtelMoney</string>
@@ -37,6 +37,15 @@
         Tafadhali ingiza namba hiyo hapo chini ili kukamilisha usajili wako.</string>
     <string name="yes">Ndiyo</string>
     <string name="no">Hapana</string>
+    <string name="choice_1">Chaguo no. 1</string>
+    <string name="choice_2">Chaguo no. 2</string>
+    <string name="choice_3">Chaguo no. 3</string>
+    <string name="choice_4">Chaguo no. 4</string>
+    <string name="choice_5">Chaguo no. 5</string>
+    <string name="choice_6">Chaguo no. 6</string>
+    <string name="choice_7">Chaguo no. 7</string>
+    <string name="choice_8">Chaguo no. 8</string>
+    <string name="choice_9">Chaguo no. 9</string>
     <string name="kiasi">Kiasi cha pesa</string>
     <string name="first_name_label">Jina la kwanza:</string>
     <string name="middle_name_label">Jina la kati:</string>

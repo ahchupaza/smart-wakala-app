@@ -29,9 +29,129 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/mpesa_type_of_transaction_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/chagua_aina_ya_muamala"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
+            <!--            <Spinner-->
+            <!--                android:id="@+id/numbers_spiner"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="13dp"-->
+            <!--                android:layout_marginStart="48dp"-->
+            <!--                android:layout_marginLeft="48dp"-->
+            <!--                android:layout_marginEnd="24dp"-->
+            <!--                android:layout_marginRight="24dp"-->
+            <!--                android:contentDescription="@string/numbers"-->
+            <!--                android:duplicateParentState="false"-->
+            <!--                android:entries="@array/numbers"-->
+            <!--                android:spinnerMode="dropdown" />-->
+
+            <RadioGroup
+                android:id="@+id/mpesa_type_of_transaction_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/choice_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_1"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_2"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_3"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_4"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_5"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_6"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_7"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/choice_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/choice_8"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/continue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/round_edges_button"
+                android:text="@string/continue_to"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
