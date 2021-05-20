@@ -25,7 +25,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         tigoPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTigoPesa = new Intent(LoginNetSelectionActivity.this, TigoPesaActivity.class);
+                Intent goToTigoPesa = new Intent(LoginNetSelectionActivity.this, TigoPesaMainActivity.class);
                 startActivity(goToTigoPesa);
             }
         });

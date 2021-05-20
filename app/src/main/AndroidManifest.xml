@@ -11,7 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".AccountVerificationActivity"></activity>
+        <activity android:name=".TigoPesaIngizaKiasiActivity"></activity>
+        <activity android:name=".TigoPesaWakalaKutoaBenkiActivity" />
+        <activity android:name=".TigoPesaLughaActivity" />
+        <activity android:name=".TigoPesaOldPinActivity" />
+        <activity android:name=".TigoPesaAkauntiYanguActivity" />
+        <activity android:name=".TigoPesaNambaYaWakalaMkuuActivity" />
+        <activity android:name=".TigoPesaNambaYaWakalaActivity" />
+        <activity android:name=".TigoPesaWakalaKutoaPesaActivity" />
+        <activity android:name=".TigoPesaNambaYaMpokeajiActivity" />
+        <activity android:name=".TigoPesaNambaYaMtejaActivity" />
+        <activity android:name=".TigoPesaIngizaPinActivity" />
+        <activity android:name=".TigoPesaUlizaSalioActivity" />
+        <activity android:name=".AccountVerificationActivity" />
         <activity android:name=".PasswordResetSuccessActivity" />
         <activity android:name=".PasswordResetActivity" />
         <activity android:name=".ForgotPasswordActivity" />
@@ -40,7 +52,7 @@
         <activity android:name=".TPesaActivity" />
         <activity android:name=".AirtelMoneyActivity" />
         <activity android:name=".MPesaActivity" />
-        <activity android:name=".TigoPesaActivity" />
+        <activity android:name=".TigoPesaMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

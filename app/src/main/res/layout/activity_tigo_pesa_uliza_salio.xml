@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".TigoPesaActivity">
+    tools:context=".TigoPesaUlizaSalioActivity">
 
     <ScrollView
-        android:id="@+id/tigopesa_layout"
+        android:id="@+id/tigopesa_uliza_salio_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
@@ -24,38 +24,24 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:id="@+id/tigopesa_linear_layout"
+            android:id="@+id/tigopesa_uliza_salio_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tigopesa_type_of_transaction_text"
+                android:id="@+id/tigopesa_uliza_salio_head"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
-                android:text="@string/chagua_aina_ya_muamala"
+                android:text="@string/tigopesa_uliza_salio_head"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="18sp" />
 
-<!--            <Spinner-->
-<!--                android:id="@+id/numbers_spiner"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="13dp"-->
-<!--                android:layout_marginStart="48dp"-->
-<!--                android:layout_marginLeft="48dp"-->
-<!--                android:layout_marginEnd="24dp"-->
-<!--                android:layout_marginRight="24dp"-->
-<!--                android:contentDescription="@string/numbers"-->
-<!--                android:duplicateParentState="false"-->
-<!--                android:entries="@array/numbers"-->
-<!--                android:spinnerMode="dropdown" />-->
-
             <RadioGroup
-                android:id="@+id/tigopesa_type_of_transaction_selection"
+                android:id="@+id/tigopesa_uliza_salio_selection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -70,70 +56,69 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RadioButton
-                    android:id="@+id/choice_1"
+                    android:id="@+id/tigopesa_uliza_salio_uliza_salio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_1"
+                    android:text="@string/uliza_salio"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_2"
+                    android:id="@+id/tigopesa_taarifa_fupi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_2"
+                    android:text="@string/taarifa_fupi"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_3"
+                    android:id="@+id/tigopesa_angalia_kamisheni"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_3"
-                    android:textSize="18sp"/>
-
-                <RadioButton
-                    android:id="@+id/choice_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/choice_4"
-                    android:textSize="18sp"/>
-
-                <RadioButton
-                    android:id="@+id/choice_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/choice_5"
-                    android:textSize="18sp"/>
-
-                <RadioButton
-                    android:id="@+id/choice_6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/choice_6"
-                    android:textSize="18sp"/>
-
-                <RadioButton
-                    android:id="@+id/choice_7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/choice_7"
-                    android:textSize="18sp"/>
-
-                <RadioButton
-                    android:id="@+id/choice_8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/choice_8"
+                    android:text="@string/angalia_kamisheni"
                     android:textSize="18sp"/>
 
             </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/back_to_tigopesa_main_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:text="@string/rudi_nyuma"
+                    tools:text="@string/rudi_nyuma"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDanger"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/back_to_previous_tigopesa_main_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:text="@string/menyu_kuu"
+                    tools:text="@string/menyu_kuu"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDanger"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/continue_button"
