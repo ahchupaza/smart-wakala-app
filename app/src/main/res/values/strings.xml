@@ -58,7 +58,6 @@
     <string name="choice_7">Chaguo no. 7</string>
     <string name="choice_8">Chaguo no. 8</string>
     <string name="choice_9">Chaguo no. 9</string>
-    <string name="kiasi">Kiasi cha pesa</string>
     <string name="first_name_label">Jina la kwanza:</string>
     <string name="middle_name_label">Jina la kati:</string>
     <string name="last_name_label">Jina la ukoo:</string>
@@ -88,5 +87,69 @@
     SmartWakala App. Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
     <string name="you_have_successfully_reset_your_password">Umefanikiwa kuunda password yako mpya.
         Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
+
+<!--airtelmoney-->
+    <string name="weka_pesa">Weka pesa</string>
+    <string name="toa_pesa">Toa pesa</string>
+    <string name="uza_muda_wa_maongezi_na_vifurushi">Uza muda wa maongezi na vifurushi</string>
+    <string name="uza_bidhaa">Uza bidhaa</string>
+    <string name="cash_drop">Cash drop</string>
+    <string name="akaunti_yangu">Akaunti yangu</string>
+    <string name="rejesha_muamala">Rejesha muamala</string>
+    <string name="ingiza_namba_ya_simu">Ingiza namba ya simu</string>
+    <string name="rudi_nyuma">Rudi nyuma</string>
+    <string name="menyu_kuu">Menyu kuu</string>
+    <string name="ingiza_kiasi_cha_kutuma">Ingiza kiasi cha pesa unachotaka kutuma kwa Shilingi za kitanzania</string>
+    <string name="toa_pesa_kwa_meseji">Toa pesa kwa meseji</string>
+    <string name="toa_pesa_kwa_wakala">Toa pesa kutoka kwa wakala</string>
+    <string name="toa_pesa_kwa_wakala_mkuu">Toa pesa kutoka kwa wakala mkuu</string>
+    <string name="toa_pesa_kutoka_benki">Toa pesa kutoka benki</string>
+    <string name="uza_muda_wa_maongezi">Uza muda wa maongezi</string>
+    <string name="uza_yatosha_na_smatika_intaneti">Uza YATOSHA na SMATIKA intaneti</string>
+    <string name="uza_luku">Uza LUKU</string>
+    <string name="fanya_malipo">Fanya malipo</string>
+    <string name="huduma_nyingine">Huduma nyingine</string>
+    <string name="ingiza_namba_ya_biashara">Ingiza namba ya biashara</string>
+    <string name="ingiza_namba_ya_mtumiaji">Ingiza namba ya mtumiaji</string>
+    <string name="timiza_mikopo">TIMIZA-MIKOPO</string>
+    <string name="usajili">Usajili</string>
+    <string name="namba_yangu_ya_siri">Namba yangu ya siri</string>
+    <string name="angalia_salio">Angalia salio</string>
+    <string name="benki">Benki</string>
+    <string name="taarifa">Taarifa</string>
+    <string name="change_to_english">Change to English</string>
+    <string name="kuunganisha_nfc_card">Kuunganisha NFC-Card</string>
+    <string name="angalia_kamisheni">Angalia kamisheni</string>
+    <string name="tuma_tena_luku">Tuma tena token ya LUKU</string>
+    <string name="ingiza_namba_ya_muamala">Ingiza namba ya muamala</string>
+
+<!--tigopesa-->
+    <string name="tuliza_salio">Uliza salio</string>
+    <string name="toa_kwa_asiyesajiliwa">Toa kwa asiyesajiliwa</string>
+    <string name="wakala_kutoa_pesa">Wakala kutoa pesa</string>
+    <string name="muda_wa_maongezi_epod">Muda wa maongezi-EPOD</string>
+    <string name="toa_pesa_benki">Toa pesa benki</string>
+    <string name="taarifa_fupi">Taarifa fupi</string>
+    <string name="ingiza_namba_ya_siri">Ingiza namba ya siri</string>
+    <string name="ingiza_namba_ya_simu_ya_mteja">Ingiza namba ya simu ya mteja</string>
+    <string name="ingiza_namba_ya_simu_ya_mpokeaji">Ingiza namba ya simu ya mpokeaji</string>
+    <string name="ingiza_namba_ya_wakala">Ingiza namba ya wakala</string>
+    <string name="huduma_kwa_wateja">Huduma kwa wateja</string>
+    <string name="wasiliama_na_huduma_kwa_wateja">Tafadhali, wasiliana na huduma kwa wateja</string>
+    <string name="namba_ya_siri_ya_zamani">Ingiza namba ya siri ya zamani</string>
+    <string name="lugha">Lugha</string>
+    <string name="kiswahili">Kiswahili</string>
+    <string name="english">English</string>
+    <string name="chagua_benki">Chagua benki</string>
+    <string name="nmb">NMB Bank</string>
+    <string name="crdb">CRDB Bank</string>
+    <string name="ingiza_kiasi">Ingiza kiasi</string>
+    <string name="badilisha_pin">Badilisha PIN</string>
+
+<!--    mpesa-->
+
+
+
+
 
 </resources>
