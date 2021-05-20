@@ -26,7 +26,7 @@
     <string name="chagua_lugha">Chagua lugha</string>
     <string name="tigopesa_uliza_salio_head">Uliza salio</string>
     <string name="tigopesa_akaunti_yangu_head">Akaunti yako</string>
-    <string name="tigopesa_wakala_kutoa_pesa_head">Chagua namna ya kutoa pesa</string>
+    <string name="tigopesa_wakala_kutoa_pesa_head">Toa pesa</string>
     <string name="tigopesa_number_to_be_registered">Ingiza namba ya TigoPesa</string>
     <string name="user_account_to_be_verified">Username</string>
     <string name="airtelmoney_number_to_be_registered">Ingiza namba ya AirtelMoney</string>
@@ -105,11 +105,11 @@
     <string name="rejesha_muamala">Rejesha muamala</string>
     <string name="ingiza_namba_ya_simu">Ingiza namba ya simu</string>
     <string name="rudi_nyuma">Rudi nyuma</string>
-    <string name="menyu_kuu">Rudi menyu kuu</string>
+    <string name="menyu_kuu">Menyu kuu</string>
     <string name="toa_pesa_kwa_meseji">Toa pesa kwa meseji</string>
-    <string name="toa_pesa_kwa_wakala">Toa kutoka kwa wakala</string>
-    <string name="toa_pesa_kwa_wakala_mkuu">Toa kutoka kwa wakala mkuu</string>
-    <string name="toa_pesa_kutoka_benki">Toa kutoka benki</string>
+    <string name="toa_pesa_kwa_wakala">Kutoka kwa wakala</string>
+    <string name="toa_pesa_kwa_wakala_mkuu">Kutoka kwa wakala mkuu</string>
+    <string name="toa_pesa_kutoka_benki">Kutoka benki</string>
     <string name="uza_muda_wa_maongezi">Uza muda wa maongezi</string>
     <string name="uza_yatosha_na_smatika_intaneti">Uza YATOSHA na SMATIKA intaneti</string>
     <string name="uza_luku">Uza LUKU</string>

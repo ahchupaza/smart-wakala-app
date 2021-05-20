@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".TigoPesaIngizaKiasiActivity"></activity>
+        <activity android:name=".TigoPesaUsajiliActivity"></activity>
+        <activity android:name=".TigoPesaIngizaKiasiActivity" />
         <activity android:name=".TigoPesaWakalaKutoaBenkiActivity" />
         <activity android:name=".TigoPesaLughaActivity" />
         <activity android:name=".TigoPesaOldPinActivity" />
