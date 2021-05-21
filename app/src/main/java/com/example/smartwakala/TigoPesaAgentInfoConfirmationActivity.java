@@ -22,7 +22,6 @@ public class TigoPesaAgentInfoConfirmationActivity extends AppCompatActivity {
         no = (RadioButton) findViewById(R.id.tigopesa_agent_info_confirm_no);
         tigoPesaAgentInfoConfirmationButton = (Button)findViewById(R.id.tigopesa_agent_info_confirmation_button);
 
-
         tigoPesaAgentInfoConfirmationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
