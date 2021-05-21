@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".AirtelMoneyActivity">
+    tools:context=".AirtelMoneyAkauntiYanguActivity">
 
     <ScrollView
         android:id="@+id/airtelmoney_layout"
@@ -24,21 +24,21 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:id="@+id/airtelmoney_linear_layout"
+            android:id="@+id/airtelmoney_cash_drop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/airtelmoney_type_of_transaction_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:text="@string/chagua_aina_ya_muamala"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/airtelmoney_type_of_transaction_text"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:text="@string/chagua_aina_ya_muamala"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                android:textSize="18sp" />-->
 
             <!--            <Spinner-->
             <!--                android:id="@+id/numbers_spiner"-->
@@ -55,7 +55,7 @@
             <!--                android:spinnerMode="dropdown" />-->
 
             <RadioGroup
-                android:id="@+id/airtelmoney_type_of_transaction_selection"
+                android:id="@+id/airtelmoney_cash_drop_selection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -70,67 +70,91 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RadioButton
-                    android:id="@+id/choice_1"
+                    android:id="@+id/airtel_timiza_mikopo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_1"
+                    android:text="@string/timiza_mikopo"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_2"
+                    android:id="@+id/usajili"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_2"
+                    android:text="@string/usajili"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_3"
+                    android:id="@+id/airtel_namba_yangu_ya_siri"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_3"
+                    android:text="@string/namba_yangu_ya_siri"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_4"
+                    android:id="@+id/airtel_angalia_salio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_4"
+                    android:text="@string/angalia_salio"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_5"
+                    android:id="@+id/airtel_benki"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_5"
+                    android:text="@string/benki"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_6"
+                    android:id="@+id/airtel_akaunti_yangu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_6"
+                    android:text="@string/akaunti_yangu"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_7"
+                    android:id="@+id/airtel_taarifa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_7"
+                    android:text="@string/taarifa"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_8"
+                    android:id="@+id/airtel_change_to_english"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_8"
+                    android:text="@string/change_to_english"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/airtel_kuunganisha_nfc_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/kuunganisha_nfc_card"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/airtel_angalia_kamisheni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/angalia_kamisheni"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/airtel_tuma_tena_luku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/tuma_tena_luku"
                     android:textSize="18sp"/>
 
             </RadioGroup>
@@ -155,3 +179,17 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

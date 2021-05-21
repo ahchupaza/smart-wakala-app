@@ -34,7 +34,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         airtelMoneyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToAirtelMoney = new Intent(LoginNetSelectionActivity.this, AirtelMoneyActivity.class);
+                Intent goToAirtelMoney = new Intent(LoginNetSelectionActivity.this, AirtelMoneyMainActivity.class);
                 startActivity(goToAirtelMoney);
             }
         });
