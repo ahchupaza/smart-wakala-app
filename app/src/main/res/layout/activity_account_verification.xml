@@ -28,7 +28,7 @@
             android:ems="10"
             android:hint="@string/user_account_to_be_verified"
             android:importantForAutofill="no"
-            android:inputType="phone"
+            android:inputType="text"
             tools:text="@string/user_account_to_be_verified" />
 
         <Button

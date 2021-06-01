@@ -26,10 +26,10 @@
             android:layout_marginRight="50dp"
             android:gravity="center_horizontal"
             android:ems="10"
-            android:hint="@string/ingiza_kiasi_cha_mtumaji"
+            android:hint="@string/ingiza_kiasi"
             android:importantForAutofill="no"
             android:inputType="phone"
-            tools:text="@string/ingiza_kiasi_cha_mtumaji" />
+            tools:text="@string/ingiza_kiasi" />
 
         <Button
             android:id="@+id/continue_button"
