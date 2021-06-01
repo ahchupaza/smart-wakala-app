@@ -22,7 +22,6 @@ public class TPesaAgentInfoConfirmationActivity extends AppCompatActivity {
         no = (RadioButton) findViewById(R.id.tpesa_agent_info_confirm_no);
         TPesaAgentInfoConfirmationButton = (Button)findViewById(R.id.tpesa_agent_info_confirmation_button);
 
-
         TPesaAgentInfoConfirmationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,11 +33,12 @@ public class TPesaAgentInfoConfirmationActivity extends AppCompatActivity {
 
                 }
                 else {
-                    Intent goToTPesaNumVerification = new Intent(TPesaAgentInfoConfirmationActivity.this, TPesaNumVerificationActivity.class);
-                    startActivity(goToTPesaNumVerification);
+                    Intent goToTPesaNumVerificationActivity = new Intent(TPesaAgentInfoConfirmationActivity.this, TPesaNumVerificationActivity.class);
+                    startActivity(goToTPesaNumVerificationActivity);
 
                 }
             }
         });
     }
 }
+

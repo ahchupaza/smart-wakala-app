@@ -15,11 +15,18 @@
     <string name="confirm_number">Hakiki namba</string>
     <string name="confirm_account">Hakiki Akaunti</string>
     <string name="submit_users_code">Wasilisha namba</string>
+    <string name="submit_users_pin">Wasilisha PIN</string>
+    <string name="submit_customer_number">Wasilisha namba</string>
     <string name="submit_users_new_password">Wasilisha Ombi</string>
+    <string name="submit_users_amount_request">Wasilisha Ombi</string>
     <string name="forgot_password">Nimesahau password yangu!</string>
     <string name="register_here">Mtumiaji mpya? Jisajili hapa!</string>
-    <string name="chagua_aina_ya_muamala">Chagua aina ya muamala</string>
+    <string name="chagua_aina_ya_muamala">Chagua aina ya huduma</string>
     <string name="numbers">numbers</string>
+    <string name="chagua_lugha">Chagua lugha</string>
+    <string name="tigopesa_uliza_salio_head">Uliza salio</string>
+    <string name="tigopesa_akaunti_yangu_head">Akaunti yako</string>
+    <string name="tigopesa_wakala_kutoa_pesa_head">Toa pesa</string>
     <string name="tigopesa_number_to_be_registered">Ingiza namba ya TigoPesa</string>
     <string name="user_account_to_be_verified">Username</string>
     <string name="airtelmoney_number_to_be_registered">Ingiza namba ya AirtelMoney</string>
@@ -31,7 +38,7 @@
     <string name="user_login_password">Password</string>
     <string name="user_register_username">Username</string>
     <string name="user_register_password">Password</string>
-    <string name="confirm_user_register_password">Confirm Password</string>
+    <string name="confirm_user_register_password">Rudia Password</string>
     <string name="user_reset_password">Password mpya</string>
     <string name="confirm_user_reset_password">Rudia password mpya</string>
     <string name="user_register_email">Barua pepe</string>
@@ -40,12 +47,12 @@
     <string name="read_terms_and_conditions">Soma vigezo na masharti!</string>
     <string name="enter_login_credentials">JAZA TAARIFA ZAKO</string>
     <string name="user_agreement_to_privacy_policy">Kwa kubonyeza kitufe cha kujisajili, 
-        unathibitisha kwamba umekubali vigezo na masharti ya kutumia huduma hii.</string>
-    <string name="two_factor_authentication_notification">Tumekutumia SMS kwenye simu yako, yenye tarakimu sita.
+        unakubali vigezo na masharti ya kutumia App hii.</string>
+    <string name="two_factor_authentication_notification">Tumekutumia SMS kwenye namba yako ya wakala, yenye tarakimu sita.
         Tafadhali ingiza namba hiyo hapo chini ili kukamilisha usajili wako.</string>
-    <string name="password_reset_codes_request_notification">Tumekutumia SMS kwenye simu yako pamoja na barua pepe kwenye anwani yako,
+    <string name="password_reset_codes_request_notification">Tumekutumia SMS kwenye namba yako ya mawasiliano pamoja na barua pepe kwenye anwani yako,
         zenye tarakimu sita. Tafadhali ingiza namba hizo hapo chini ili kuunda password mpya.</string>
-    <string name="password_reset_notification">Tafadhali unda password yako mpya, yenye mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo
+    <string name="password_reset_notification">Tafadhali unda password mpya, yenye mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo
         kwa pamoja visipungue nane (8) kwa ajili ya usalama zaidi a akaunti yako.</string>
     <string name="yes">Ndiyo</string>
     <string name="no">Hapana</string>
@@ -58,7 +65,6 @@
     <string name="choice_7">Chaguo no. 7</string>
     <string name="choice_8">Chaguo no. 8</string>
     <string name="choice_9">Chaguo no. 9</string>
-    <string name="kiasi">Kiasi cha pesa</string>
     <string name="first_name_label">Jina la kwanza:</string>
     <string name="middle_name_label">Jina la kati:</string>
     <string name="last_name_label">Jina la ukoo:</string>
@@ -72,12 +78,11 @@
     <string name="about_smartwakala_app_text">Kuhusu SmartWakala App</string>
     <string name="about_smartwakala_app_note">Karibu kwenye App ya SmartWakala. App hii ni maalum
     kwa ajili ya kuwasaidia mawakala wa mitandao ya simu nchini Tanzania kufanya miamala yao kwa
-    urahsi na ufanisi. Miamala yote itafanyika kupitia App hii tu bila uhitaji wa kuwa na simu nyingine ya ziada.</string>
+    urahsi na ufanisi. Miamala yote itafanyika kupitia App hii pekee bila uhitaji wa kuwa na simu nyingine ya ziada.</string>
     <string name="available_services_text">Huduma za SmartWakala</string>
-    <string name="available_services_note">Kufanya miamala, Kupata taarifa za miamala na Kupata takwimu za miamala,
-        Kujua mwenendo wa biashara.</string>
+    <string name="available_services_note">Kufanya miamala, Kupata taarifa za miamala na Kupata takwimu za miamala, na Kujua mwenendo wa biashara.</string>
     <string name="how_to_register_text">Jinsi ya Kujisajili</string>
-    <string name="how_to_register_note">Fuata hatua hizi chache na rahisi za kujisajili ili uweze kunufaika na huduma za App hii.
+    <string name="how_to_register_note">Fuata hatua hizi chache na rahisi za kujisajili ili uweze kunufaika na huduma za SmartWakala-App.
         Kwenye "Username", unda ki-jina chako cha kipekee ambacho kitakutambulisha wewe na kukutofautisha na mawakala wengine.
         Kwenye "Password", unda neno-siri lako litakalokuwa kama ufunguo wa kuingilia kwenye mfumo huu wa SmartWakala.
         Hakikisha kwamba password yako ina mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo kwa pamoja visipungue nane (8)
@@ -88,5 +93,67 @@
     SmartWakala App. Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
     <string name="you_have_successfully_reset_your_password">Umefanikiwa kuunda password yako mpya.
         Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
+
+    <!--airtelmoney-->
+    <string name="weka_pesa">Weka pesa</string>
+    <string name="toa_pesa">Toa pesa</string>
+    <string name="uza_muda_wa_maongezi_na_vifurushi">Uza muda wa maongezi na vifurushi</string>
+    <string name="uza_bidhaa">Uza bidhaa</string>
+    <string name="cash_drop">Cash drop</string>
+    <string name="akaunti_yangu">Akaunti yangu</string>
+    <string name="rejesha_muamala">Rejesha muamala</string>
+    <string name="ingiza_namba_ya_simu">Namba ya simu</string>
+    <string name="rudi_nyuma">Rudi nyuma</string>
+    <string name="menyu_kuu">Menyu kuu</string>
+    <string name="toa_pesa_kwa_meseji">Toa pesa kwa meseji</string>
+    <string name="toa_pesa_kwa_wakala">Kutoka kwa wakala</string>
+    <string name="toa_pesa_kwa_wakala_mkuu">Kutoka kwa wakala mkuu</string>
+    <string name="toa_pesa_kutoka_benki">Kutoka benki</string>
+    <string name="uza_muda_wa_maongezi">Uza muda wa maongezi</string>
+    <string name="uza_yatosha_na_smatika_intaneti">Uza Yatosha na SMATIKA intaneti</string>
+    <string name="uza_luku">Uza LUKU</string>
+    <string name="fanya_malipo">Fanya malipo</string>
+    <string name="huduma_nyingine">Huduma nyingine</string>
+    <string name="ingiza_namba_ya_biashara">Namba ya biashara</string>
+    <string name="ingiza_namba_ya_mtumiaji">Namba ya mtumiaji</string>
+    <string name="timiza_mikopo">TIMIZA-MIKOPO</string>
+    <string name="usajili">Usajili</string>
+    <string name="namba_yangu_ya_siri">Namba yangu ya siri</string>
+    <string name="angalia_salio">Angalia salio</string>
+    <string name="benki">Benki</string>
+    <string name="taarifa">Taarifa</string>
+    <string name="change_to_english">Change to English</string>
+    <string name="kuunganisha_nfc_card">Kuunganisha NFC-Card</string>
+    <string name="angalia_kamisheni">Angalia kamisheni</string>
+    <string name="tuma_tena_luku">Tuma tena token ya LUKU</string>
+    <string name="ingiza_namba_ya_muamala">Namba ya muamala</string>
+
+    <!--tigopesa-->
+    <string name="uliza_salio">Uliza salio</string>
+    <string name="toa_kwa_asiyesajiliwa">Toa kwa asiyesajiliwa</string>
+    <string name="wakala_kutoa_pesa">Wakala kutoa pesa</string>
+    <string name="muda_wa_maongezi_epod">Muda wa maongezi-EPOD</string>
+    <string name="toa_pesa_benki">Toa pesa benki</string>
+    <string name="taarifa_fupi">Taarifa fupi</string>
+    <string name="ingiza_namba_ya_siri">Ingiza PIN yako</string>
+    <string name="ingiza_namba">Ingiza namba</string>
+    <string name="ingiza_namba_ya_simu_ya_mteja">Namba ya mteja</string>
+    <string name="ingiza_namba_ya_simu_ya_mpokeaji">Namba ya mpokeaji</string>
+    <string name="ingiza_namba_ya_wakala">Namba ya wakala</string>
+    <string name="ingiza_namba_ya_wakala_mkuu">Namba ya wakala mkuu</string>
+    <string name="huduma_kwa_wateja">Huduma kwa wateja</string>
+    <string name="wasiliama_na_huduma_kwa_wateja">Tafadhali, wasiliana na huduma kwa wateja!</string>
+    <string name="namba_ya_siri_ya_zamani">PIN ya zamani</string>
+    <string name="badili_lugha">Badili lugha</string>
+    <string name="kiswahili">Kiswahili</string>
+    <string name="english">English</string>
+    <string name="chagua_benki">Chagua benki</string>
+    <string name="nmb">NMB Bank</string>
+    <string name="crdb">CRDB Bank</string>
+    <string name="ingiza_kiasi">Ingiza kiasi</string>
+    <string name="badili_pin">Badili PIN</string>
+
+    <!--    mpesa-->
+
 
 </resources>

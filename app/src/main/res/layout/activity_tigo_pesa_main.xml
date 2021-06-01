@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".AirtelMoneyActivity">
+    tools:context=".TigoPesaMainActivity">
 
     <ScrollView
-        android:id="@+id/airtelmoney_layout"
+        android:id="@+id/tigopesa_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
@@ -24,13 +24,13 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:id="@+id/airtelmoney_linear_layout"
+            android:id="@+id/tigopesa_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/airtelmoney_type_of_transaction_text"
+                android:id="@+id/tigopesa_type_of_transaction_head"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -40,22 +40,22 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="18sp" />
 
-            <!--            <Spinner-->
-            <!--                android:id="@+id/numbers_spiner"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="13dp"-->
-            <!--                android:layout_marginStart="48dp"-->
-            <!--                android:layout_marginLeft="48dp"-->
-            <!--                android:layout_marginEnd="24dp"-->
-            <!--                android:layout_marginRight="24dp"-->
-            <!--                android:contentDescription="@string/numbers"-->
-            <!--                android:duplicateParentState="false"-->
-            <!--                android:entries="@array/numbers"-->
-            <!--                android:spinnerMode="dropdown" />-->
+<!--            <Spinner-->
+<!--                android:id="@+id/numbers_spiner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="13dp"-->
+<!--                android:layout_marginStart="48dp"-->
+<!--                android:layout_marginLeft="48dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:layout_marginRight="24dp"-->
+<!--                android:contentDescription="@string/numbers"-->
+<!--                android:duplicateParentState="false"-->
+<!--                android:entries="@array/numbers"-->
+<!--                android:spinnerMode="dropdown" />-->
 
             <RadioGroup
-                android:id="@+id/airtelmoney_type_of_transaction_selection"
+                android:id="@+id/tigopesa_type_of_transaction_selection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -70,73 +70,73 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RadioButton
-                    android:id="@+id/choice_1"
+                    android:id="@+id/tigopesa_uliza_salio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_1"
+                    android:text="@string/uliza_salio"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_2"
+                    android:id="@+id/tigopesa_usajili"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_2"
+                    android:text="@string/usajili"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_3"
+                    android:id="@+id/tigopesa_weka_pesa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_3"
+                    android:text="@string/weka_pesa"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_4"
+                    android:id="@+id/tigopesa_toa_kwa_asiyesajiliwa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_4"
+                    android:text="@string/toa_kwa_asiyesajiliwa"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_5"
+                    android:id="@+id/tigopesa_wakala_kutoa_pesa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_5"
+                    android:text="@string/wakala_kutoa_pesa"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_6"
+                    android:id="@+id/tigopesa_muda_wa_maongezi_epod"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_6"
+                    android:text="@string/muda_wa_maongezi_epod"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_7"
+                    android:id="@+id/tigopesa_akaunti_yangu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_7"
+                    android:text="@string/akaunti_yangu"
                     android:textSize="18sp"/>
 
                 <RadioButton
-                    android:id="@+id/choice_8"
+                    android:id="@+id/tigopesa_toa_pesa_benki"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/choice_8"
+                    android:text="@string/toa_pesa_benki"
                     android:textSize="18sp"/>
 
             </RadioGroup>
 
             <Button
-                android:id="@+id/continue_button"
+                android:id="@+id/tigopesa_main_menu_continue_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"

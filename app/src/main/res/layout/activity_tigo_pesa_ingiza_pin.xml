@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/lukusmart_background2"
     android:fillViewport="true"
-    tools:context=".AccountVerificationActivity">
+    tools:context=".TigoPesaIngizaPinActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/user_acc_to_be_verified"
+            android:id="@+id/user_pin_request"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
@@ -26,13 +26,13 @@
             android:layout_marginRight="50dp"
             android:gravity="center_horizontal"
             android:ems="10"
-            android:hint="@string/user_account_to_be_verified"
+            android:hint="@string/ingiza_namba_ya_siri"
             android:importantForAutofill="no"
-            android:inputType="text"
-            tools:text="@string/user_account_to_be_verified" />
+            android:inputType="numberPassword"
+            tools:text="@string/ingiza_namba_ya_siri" />
 
         <Button
-            android:id="@+id/user_acc_verification_hakiki_button"
+            android:id="@+id/user_pin_submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -44,7 +44,7 @@
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
             android:textSize="15sp"
-            android:text="@string/confirm_account"
+            android:text="@string/submit_users_pin"
             android:hapticFeedbackEnabled="true"/>
     </LinearLayout>
 </ScrollView>
