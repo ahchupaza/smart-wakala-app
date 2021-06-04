@@ -45,6 +45,8 @@
             android:hint="@string/code_sent_to_users_phone"
             android:importantForAutofill="no"
             android:inputType="phone"
+            android:maxLength="6"
+            android:maxLines="1"
             tools:text="@string/code_sent_to_users_phone" />
 
         <Button

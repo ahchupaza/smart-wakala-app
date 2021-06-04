@@ -29,6 +29,8 @@
             android:hint="@string/ezypesa_number_to_be_registered"
             android:importantForAutofill="no"
             android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
             tools:text="@string/ezypesa_number_to_be_registered" />
 
         <Button
