@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -100,13 +101,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, LoginNetSelectionActivity.class));
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-                            progressBar.setVisibility(View.GONE);
+                            if (user.isEmailVerified()){
+                                startActivity(new Intent(LoginActivity.this, LoginNetSelectionActivity.class));
+                                progressBar.setVisibility(View.GONE);
+                            }
+                            else {
+                                Toast.makeText(LoginActivity.this, "Tafadhali, thibitisha kwanza anwani yako ya barua pepe!", Toast.LENGTH_LONG).show();
+                                progressBar.setVisibility(View.GONE);
+                            }
                         }
                         else {
-                            Toast.makeText(LoginActivity.this, "Haujafanikiwa, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
-
+                            Toast.makeText(LoginActivity.this, "Haujafanikisha, hakikisha taarifa zako na ujaribu tena!", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
                         }
                     }
