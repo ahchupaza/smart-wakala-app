@@ -29,6 +29,8 @@
             android:hint="@string/ingiza_namba_ya_simu_ya_mteja"
             android:importantForAutofill="no"
             android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
             tools:text="@string/ingiza_namba_ya_simu_ya_mteja" />
 
         <Button
