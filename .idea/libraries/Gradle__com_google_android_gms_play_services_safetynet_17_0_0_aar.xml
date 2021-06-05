@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-safetynet:17.0.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/791b7f2105063fc266a16acd2a1c6097/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/791b7f2105063fc266a16acd2a1c6097/jetified-play-services-safetynet-17.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/791b7f2105063fc266a16acd2a1c6097/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/f0b76b4358a3815b2628be4cc873b745/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/f0b76b4358a3815b2628be4cc873b745/jetified-play-services-safetynet-17.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/f0b76b4358a3815b2628be4cc873b745/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

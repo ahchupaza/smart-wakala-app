@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.firebaseui:firebase-ui-auth:6.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/9397a52a49413585a66e37fa2a8817ed/jetified-firebase-ui-auth-6.1.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/2ee01089c13fdc6c4355eed89542fee5/jetified-firebase-ui-auth-6.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/9397a52a49413585a66e37fa2a8817ed/jetified-firebase-ui-auth-6.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/9397a52a49413585a66e37fa2a8817ed/jetified-firebase-ui-auth-6.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/9397a52a49413585a66e37fa2a8817ed/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/2ee01089c13fdc6c4355eed89542fee5/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/2ee01089c13fdc6c4355eed89542fee5/jetified-firebase-ui-auth-6.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/2ee01089c13fdc6c4355eed89542fee5/jetified-firebase-ui-auth-6.1.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-auth/6.1.0/21a987b39cb2e26fdbdee7801ad818aede665c85/firebase-ui-auth-6.1.0-javadoc.jar!/" />

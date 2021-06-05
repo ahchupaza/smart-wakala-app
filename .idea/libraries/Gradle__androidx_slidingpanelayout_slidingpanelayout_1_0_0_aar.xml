@@ -3,9 +3,10 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa2f1cd22069a9bb65f1845d902d729f/slidingpanelayout-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b21398ec4672209e12f9d44aaf124af/slidingpanelayout-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/ef3b5d0deeaa4b2652aeadf31ff90a2b/slidingpanelayout-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/ef3b5d0deeaa4b2652aeadf31ff90a2b/slidingpanelayout-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/ef3b5d0deeaa4b2652aeadf31ff90a2b/slidingpanelayout-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/c19bd1bff6f9e0cad49daea9dff7c1c9/slidingpanelayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/c19bd1bff6f9e0cad49daea9dff7c1c9/slidingpanelayout-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/c19bd1bff6f9e0cad49daea9dff7c1c9/slidingpanelayout-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -3,9 +3,10 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f1f8381ec1e1c3f6b165a08612cfd883/asynclayoutinflater-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/247f3bbc11fc5188f3d3375e9cc247ac/asynclayoutinflater-1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/37b9e5e131c354055139c038484e9379/asynclayoutinflater-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/37b9e5e131c354055139c038484e9379/asynclayoutinflater-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/37b9e5e131c354055139c038484e9379/asynclayoutinflater-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/44f3fdcd0e6afb268192dce4e86b198d/asynclayoutinflater-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/44f3fdcd0e6afb268192dce4e86b198d/asynclayoutinflater-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/44f3fdcd0e6afb268192dce4e86b198d/asynclayoutinflater-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
