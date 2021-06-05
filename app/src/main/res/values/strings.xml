@@ -1,4 +1,15 @@
 <resources>
+
+    <string name="todo">Container</string>
+    <string name="Vidokezo">Vidokezo</string>
+    <string name="toka">Toka</string>
+    <string name="profile">Profile</string>
+    <string name="kuhusu">Kuhusu</string>
+    <string name="takwimu">Takwimu</string>
+    <string name="mapato">Mapato</string>
+    <string name="historia_ya_miamala">Historia ya miamala</string>
+
+
     <string name="app_name">SmartWakala</string>
     <string name="need_help_text">Msaada?</string>
     <string name="choose_network">CHAGUA MTANDAO</string>
