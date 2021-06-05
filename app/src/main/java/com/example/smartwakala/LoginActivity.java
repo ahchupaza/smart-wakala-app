@@ -100,15 +100,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, LoginNetSelectionActivity.class));
+                            startActivity(new Intent(LoginActivity.this, ActivityUserDashboard.class));
 
-                            progressBar.setVisibility(View.GONE);
                         }
                         else {
                             Toast.makeText(LoginActivity.this, "Haujafanikiwa, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
 
-                            progressBar.setVisibility(View.GONE);
                         }
+                        progressBar.setVisibility(View.GONE);
                     }
 
                 });
