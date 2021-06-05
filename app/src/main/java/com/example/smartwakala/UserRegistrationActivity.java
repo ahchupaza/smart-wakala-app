@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class UserRegistrationActivity extends AppCompatActivity implements View.OnClickListener {
@@ -124,6 +125,7 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
                         if(task.isSuccessful()){
                             User user =  new  User(userContact, userEmail, userUsername, userPassword1);
 
@@ -134,19 +136,22 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
                                 public void onComplete(@NonNull Task<Void> task) {
 
                                     if (task.isSuccessful()) {
-//                                        Toast.makeText(UserRegistrationActivity.this, "Umefanikiwa kujisajili!", Toast.LENGTH_LONG).show();
+                                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                                        assert user != null;
+                                        user.sendEmailVerification();
+
                                         startActivity(new Intent(UserRegistrationActivity.this, RegistrationSuccessActivity.class));
                                         progressBar.setVisibility(View.GONE);
 
                                     } else {
-                                        Toast.makeText(UserRegistrationActivity.this, "Haujafanikiwa, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(UserRegistrationActivity.this, "Haujafanikisha, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
-
                                 }
                             });
                         } else {
-                            Toast.makeText(UserRegistrationActivity.this, "Haujafanikiwa, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserRegistrationActivity.this, "Haujafanikisha, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
                             }
                         }
 
