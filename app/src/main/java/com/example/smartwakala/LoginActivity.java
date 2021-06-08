@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
@@ -27,6 +28,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText userEmail, userPassword1;
     private ProgressBar progressBar;
     private Button loginButtton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +89,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             userPassword1.setError("Haukujaza eneo hili!");
             userPassword1.requestFocus();
             return;
+
         }
+        progressBar.setVisibility(View.VISIBLE);
+
         if (userPassword1.length() < 8){
             userPassword1.setError("Password isipungue 8");
             userPassword1.requestFocus();
@@ -101,7 +107,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                         if(task.isSuccessful()){
                             startActivity(new Intent(LoginActivity.this, ActivityUserDashboard.class));
-
+                            finish();
                         }
                         else {
                             Toast.makeText(LoginActivity.this, "Haujafanikiwa, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();

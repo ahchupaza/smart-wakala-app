@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/bdb7b736ed9706651246147536636b65/core-runtime-2.1.0/res" />
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/8f8c86e7506ba76f2a4a3c1500c900c3/core-runtime-2.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/8f8c86e7506ba76f2a4a3c1500c900c3/core-runtime-2.1.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/8f8c86e7506ba76f2a4a3c1500c900c3/core-runtime-2.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/5f44c84fc7ba6498e68441af464c2643/core-runtime-2.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/5f44c84fc7ba6498e68441af464c2643/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/5f44c84fc7ba6498e68441af464c2643/core-runtime-2.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
