@@ -27,7 +27,7 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
     private FirebaseAuth mAuth;
 
     private TextView termsAndConditionsText;
-    private EditText userContact, userEmail, userUsername, userPassword1, userPassword2;
+    private EditText userContact, userEmail, userUsername, userPassword, userPassword2;
     private ProgressBar progressBar;
     private Button registerButton;
 
@@ -44,7 +44,7 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
         userContact = (EditText) findViewById(R.id.user_register_contact);
         userEmail = (EditText) findViewById(R.id.user_register_email);
         userUsername = (EditText) findViewById(R.id.register_username);
-        userPassword1 = (EditText) findViewById(R.id.register_password);
+        userPassword = (EditText) findViewById(R.id.register_password);
         userPassword2 = (EditText) findViewById(R.id.register_confirm_password);
         progressBar = (ProgressBar) findViewById(R.id.register_loading);
 
@@ -70,15 +70,15 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
         String contact = userContact.getText().toString().trim();
         String email = userEmail.getText().toString().trim();
         String username = userUsername.getText().toString().trim();
-        String password = userPassword1.getText().toString().trim();
+        String password = userPassword.getText().toString().trim();
         String password2 = userPassword2.getText().toString().trim();
 
-        if (userContact.getText().toString().trim().length() == 0){
+        if (contact.isEmpty()){
             userContact.setError("Haukujaza eneo hili!");
             userContact.requestFocus();
             return;
         }
-        if (userEmail.getText().toString().trim().length() == 0){
+        if (email.isEmpty()){
             userEmail.setError("Haukujaza eneo hili!");
             userEmail.requestFocus();
             return;
@@ -88,36 +88,36 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
             userEmail.requestFocus();
             return;
         }
-        if (userUsername.getText().toString().trim().length() == 0){
+        if (username.isEmpty()){
             userUsername.setError("Haukujaza eneo hili!");
             userUsername.requestFocus();
             return;
         }
-        if (userPassword1.getText().toString().trim().length() == 0){
-            userPassword1.setError("Haukujaza eneo hili!");
-            userPassword1.requestFocus();
+        if (password.isEmpty()){
+            userPassword.setError("Haukujaza eneo hili!");
+            userPassword.requestFocus();
             return;
         }
-        if (userPassword1.length() < 8){
-            userPassword1.setError("Password isipungue 8");
-            userPassword1.requestFocus();
+        if (password.length() < 8){
+            userPassword.setError("Password isipungue 8");
+            userPassword.requestFocus();
             return;
         }
-        if (userPassword2.getText().toString().trim().length() == 0){
+        if (password2.isEmpty()){
             userPassword2.setError("Haukujaza eneo hili!");
             userPassword2.requestFocus();
             return;
         }
-        if (userPassword2.length() < 8){
+        if (password2.length() < 8){
             userPassword2.setError("Password isipungue 8");
             userPassword2.requestFocus();
             return;
         }
-//        if (!userPassword1.equals(userPassword2)){
-//            userPassword2.setError("Password hazifanani");
-//            userPassword2.requestFocus();
-//            return;
-//        }
+        if (!password.equals(password2)){
+            userPassword2.setError("Password hazifanani");
+            userPassword2.requestFocus();
+            return;
+        }
 
         progressBar.setVisibility(View.VISIBLE);
 
@@ -127,7 +127,7 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            User user =  new  User(userContact, userEmail, userUsername, userPassword1);
+                            User user =  new  User(userContact, userEmail, userUsername, userPassword);
 
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getUid())

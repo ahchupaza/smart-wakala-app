@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lukusmart_background2"
+    android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
     tools:context=".AccountVerificationActivity">
 
@@ -16,23 +16,36 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/user_acc_to_be_verified"
+            android:id="@+id/reset_password_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
             android:gravity="center_horizontal"
             android:ems="10"
-            android:hint="@string/user_account_to_be_verified"
+            android:hint="@string/user_login_email"
             android:importantForAutofill="no"
-            android:inputType="text"
-            tools:text="@string/user_account_to_be_verified" />
+            android:inputType="textEmailAddress"
+            tools:text="@string/user_login_email"
+            tools:ignore="TextFields" />
+
+        <ProgressBar
+            android:id="@+id/acc_verification_loading"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <Button
-            android:id="@+id/user_acc_verification_hakiki_button"
+            android:id="@+id/reset_password_email_submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -44,7 +57,7 @@
             android:background="@drawable/round_edges_button"
             android:textColor="#ffffff"
             android:textSize="15sp"
-            android:text="@string/confirm_account"
+            android:text="@string/submit_users_reset_password_email"
             android:hapticFeedbackEnabled="true"/>
     </LinearLayout>
 </ScrollView>

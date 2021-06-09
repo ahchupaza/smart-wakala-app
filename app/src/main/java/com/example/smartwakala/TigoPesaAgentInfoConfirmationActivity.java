@@ -26,18 +26,12 @@ public class TigoPesaAgentInfoConfirmationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (yes.isChecked()) {
-
-                    Intent goToUserRegistrationActivity = new Intent(TigoPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class);
-                    startActivity(goToUserRegistrationActivity);
-
+                    startActivity(new Intent(TigoPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class));
                 }
                 else {
-                    Intent goToTigoPesaNumVerification = new Intent(TigoPesaAgentInfoConfirmationActivity.this, TigoPesaNumVerificationActivity.class);
-                    startActivity(goToTigoPesaNumVerification);
-
+                    startActivity(new Intent(TigoPesaAgentInfoConfirmationActivity.this, TigoPesaNumVerificationActivity.class));
                 }
             }
         });
-
     }
 }

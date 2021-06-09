@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class AirtelMoneyNumVerificationActivity extends AppCompatActivity {
 
-    Button airtelMoneyNumVerificationButton;
+    private Button airtelMoneyNumVerificationButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

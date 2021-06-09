@@ -15,21 +15,18 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
 
     private TextView forgotPasswordText, registerText ;
-    private EditText userEmail, userPassword1;
+    private EditText userEmail, userPassword;
     private ProgressBar progressBar;
     private Button loginButtton;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,25 +42,22 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         registerText.setOnClickListener(this);
 
         userEmail = (EditText) findViewById(R.id.login_email);
-        userPassword1 = (EditText) findViewById(R.id.login_password);
+        userPassword = (EditText) findViewById(R.id.login_password);
         progressBar = (ProgressBar) findViewById(R.id.login_loading);
 
         loginButtton = (Button)findViewById(R.id.login_button);
         loginButtton.setOnClickListener(this);
-
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.user_forgot_password_text:
-                Intent goToForgotPassword = new Intent(LoginActivity.this, AccountVerificationActivity.class);
-                startActivity(goToForgotPassword);
+                startActivity(new Intent(LoginActivity.this, AccountVerificationActivity.class));
                 break;
 
             case R.id.user_register_text:
-                Intent goToRegistration = new Intent(LoginActivity.this, RegisterNetSelectionActivity.class);
-                startActivity(goToRegistration);
+                startActivity(new Intent(LoginActivity.this, RegisterNetSelectionActivity.class));
                 break;
 
             case R.id.login_button:
@@ -73,9 +67,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void loginUser() {
         String email = userEmail.getText().toString().trim();
-        String password = userPassword1.getText().toString().trim();
+        String password = userPassword.getText().toString().trim();
 
-        if (userEmail.getText().toString().trim().length() == 0){
+        if (email.isEmpty()){
             userEmail.setError("Haukujaza eneo hili!");
             userEmail.requestFocus();
             return;
@@ -85,38 +79,42 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             userEmail.requestFocus();
             return;
         }
-        if (userPassword1.getText().toString().trim().length() == 0){
-            userPassword1.setError("Haukujaza eneo hili!");
-            userPassword1.requestFocus();
+        if (password.isEmpty()){
+            userPassword.setError("Haukujaza eneo hili!");
+            userPassword.requestFocus();
             return;
-
         }
-        progressBar.setVisibility(View.VISIBLE);
-
-        if (userPassword1.length() < 8){
-            userPassword1.setError("Password isipungue 8");
-            userPassword1.requestFocus();
+        if (password.length() < 8){
+            userPassword.setError("Password isipungue 8");
+            userPassword.requestFocus();
             return;
         }
 
         progressBar.setVisibility(View.VISIBLE);
 
         mAuth.signInWithEmailAndPassword(email ,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
 
-                        if(task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, ActivityUserDashboard.class));
-                            finish();
-                        }
-                        else {
-                            Toast.makeText(LoginActivity.this, "Haujafanikiwa, tafadhali jaribu tena!", Toast.LENGTH_LONG).show();
+                if(task.isSuccessful()){
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-                        }
+                    if (user.isEmailVerified()){
+                        startActivity(new Intent(LoginActivity.this, UserDashboardActivity.class));
                         progressBar.setVisibility(View.GONE);
                     }
+                    else {
+                        Toast.makeText(LoginActivity.this, "Tafadhali, thibitisha kwanza anwani yako ya barua pepe na ujaribu tena!", Toast.LENGTH_LONG).show();
+                        progressBar.setVisibility(View.GONE);
+                    }
+                }
+                else {
+                    Toast.makeText(LoginActivity.this, "Haujafanikisha, angalia mtandao au hakikisha taarifa zako na ujaribu tena!", Toast.LENGTH_LONG).show();
+                    progressBar.setVisibility(View.GONE);
+                }
+            }
 
-                });
+        });
     }
 
 }

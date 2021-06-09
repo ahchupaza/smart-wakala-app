@@ -6,7 +6,6 @@
     <string name="profile">Profile</string>
     <string name="kuhusu">Kuhusu</string>
     <string name="takwimu">Takwimu</string>
-    <string name="mapato">Mapato</string>
     <string name="historia_ya_miamala">Historia ya miamala</string>
 
 
@@ -30,7 +29,8 @@
     <string name="submit_customer_number">Wasilisha namba</string>
     <string name="submit_users_new_password">Wasilisha Ombi</string>
     <string name="submit_users_amount_request">Wasilisha Ombi</string>
-    <string name="forgot_password">Nimesahau password yangu!</string>
+    <string name="submit_users_reset_password_email">Wasilisha Ombi</string>
+    <string name="forgot_password">Nimesahau neno-siri!</string>
     <string name="register_here">Mtumiaji mpya? Jisajili hapa!</string>
     <string name="chagua_aina_ya_muamala">Chagua aina ya huduma</string>
     <string name="numbers">numbers</string>
@@ -46,12 +46,12 @@
     <string name="tpesa_number_to_be_registered">Ingiza namba ya T-Pesa</string>
     <string name="ezypesa_number_to_be_registered">Ingiza namba ya EzyMoney</string>
     <string name="user_login_username">Username</string>
-    <string name="user_login_password">Password</string>
+    <string name="user_login_password">Neno-siri</string>
     <string name="user_register_username">Username</string>
-    <string name="user_register_password">Password</string>
-    <string name="confirm_user_register_password">Rudia Password</string>
-    <string name="user_reset_password">Password mpya</string>
-    <string name="confirm_user_reset_password">Rudia password mpya</string>
+    <string name="user_register_password">Neno-siri</string>
+    <string name="confirm_user_register_password">Rudia Neno-siri</string>
+    <string name="user_reset_password">Neno-siri jipya</string>
+    <string name="confirm_user_reset_password">Rudia neno-siri jipya</string>
     <string name="user_register_email">Barua pepe</string>
     <string name="user_register_contact">Simu ya mawasiliano</string>
     <string name="is_information_correct">Je, taarifa hizo ni sahihi kuhusu wewe?</string>
@@ -61,9 +61,9 @@
         unakubali vigezo na masharti ya kutumia App hii.</string>
     <string name="two_factor_authentication_notification">Tumekutumia SMS kwenye namba yako ya wakala, yenye tarakimu sita.
         Tafadhali ingiza namba hiyo hapo chini ili kukamilisha usajili wako.</string>
-    <string name="password_reset_codes_request_notification">Tumekutumia SMS kwenye namba yako ya mawasiliano pamoja na barua pepe kwenye anwani yako,
-        zenye tarakimu sita. Tafadhali ingiza namba hizo hapo chini ili kuunda password mpya.</string>
-    <string name="password_reset_notification">Tafadhali unda password mpya, yenye mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo
+    <string name="password_reset_action_notification">Tafadhali ingia kwenye barua pepe yako,
+        tumekutumia kiungo cha kukuwezesha kuunda neno-siri jipya.</string>
+    <string name="password_reset_notification">Tafadhali unda neno-siri jipya, yenye mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo
         kwa pamoja visipungue nane (8) kwa ajili ya usalama zaidi a akaunti yako.</string>
     <string name="yes">Ndiyo</string>
     <string name="no">Hapana</string>
@@ -95,14 +95,14 @@
     <string name="how_to_register_text">Jinsi ya Kujisajili</string>
     <string name="how_to_register_note">Fuata hatua hizi chache na rahisi za kujisajili ili uweze kunufaika na huduma za SmartWakala-App.
         Kwenye "Username", unda ki-jina chako cha kipekee ambacho kitakutambulisha wewe na kukutofautisha na mawakala wengine.
-        Kwenye "Password", unda neno-siri lako litakalokuwa kama ufunguo wa kuingilia kwenye mfumo huu wa SmartWakala.
-        Hakikisha kwamba password yako ina mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo kwa pamoja visipungue nane (8)
-        kwa ajili ya usalama zaidi wa akaunti yako. Tafadhali itunze password yako na usimwambie mtu mwingine yeyote usiemwamini.
+        Kwenye "Neno-siri", unda neno-siri lako litakalokuwa kama ufunguo wa kuingilia kwenye mfumo huu wa SmartWakala.
+        Hakikisha kwamba neno-siri lako ina mchanganyiko wa herufi, tarakimu pamoja na alama nyinginezo kwa pamoja visipungue nane (8)
+        kwa ajili ya usalama zaidi wa akaunti yako. Tafadhali litunze neno-siri lako na usimwambie mtu mwingine yeyote usiemwamini.
         Ama kama wewe tayari umeshajisajili, tafadhali ingiza taarifa zako kwa usahihi ili kuingia kwenye mfumo huu.</string>
     <string name="congratulations">Hongera..!!</string>
     <string name="you_are_successfully_registered">Umefanikiwa kujisajili katika mfumo wa
     SmartWakala App. Tafadhali ingia kwenye barua pepe yako, tumekutumia kiungo cha kukuwezesha kuthibitisha na kukamilisha usajili wako.</string>
-    <string name="you_have_successfully_reset_your_password">Umefanikiwa kuunda password yako mpya.
+    <string name="you_have_successfully_reset_your_password">Umefanikiwa kuunda nen0-siri lako jipya.
         Tafadhali bofya kitufe hapo chini ili ujaze taarifa zako za kuingilia kwenye mfumo.</string>
 
     <!--airtelmoney-->
@@ -164,8 +164,14 @@
     <string name="ingiza_kiasi">Ingiza kiasi</string>
     <string name="badili_pin">Badili PIN</string>
     <string name="user_login_email">Barua pepe</string>
-
-
+    <string name="dashboard_yangu">DASHBOARD</string>
+    <string name="mapato">Mapato</string>
+    <string name="wateja">Wateja</string>
+    <string name="vidokezo">Vidokezo</string>
+    <string name="ondoka">Ondoka</string>
+    <string name="maoni">Maoni</string>
+    <string name="settings">Settings</string>
+    <string name="miamala">Miamala</string>
 
 
     <!--    mpesa-->

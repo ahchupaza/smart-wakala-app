@@ -1,339 +1,438 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityUserDashboard"
+    tools:context=".UserDashboardActivity"
     android:orientation="vertical"
-    >
+    android:background="@drawable/smartwakala_background">
+
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         tools:ignore="UselessParent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:id="@+id/topArea"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="166dp"
-                android:background="@drawable/lukusmart_background2">
-            </RelativeLayout>
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wakala">
+                </ImageView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/dashboard_yangu"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#ffff">-->
+<!--                </TextView>-->
+            </LinearLayout>
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="-80dp"
-                android:columnCount="2"
-                android:padding="10dp"
-                android:layout_marginLeft="20dp">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/driverManager"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/wekapesa"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/transaction"
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/weka_pesa"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/parkingManager"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/mapato"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/mapato1"
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/mapato"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/history"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/takwimu"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/barchart"
-
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/takwimu"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/feedback"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/historia"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/history"
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/historia_ya_miamala"
-                            android:textSize="13sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/miamala"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/transaction1"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_miamala_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/miamala"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/miamala">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_miamala_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
 
 
-                </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/support"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
+                    </androidx.cardview.widget.CardView>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/profile"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/profile"
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/profile"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@id/setting"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
-                        android:layout_width="136dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/mapato"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/revenue"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_mapato_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mapato"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/mapato">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_mapato_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
 
 
-                        <ImageView
-                            android:id="@+id/taarifa"
-                            android:layout_width="92dp"
-                            android:layout_height="95dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:contentDescription="@string/todo"
+                        </RelativeLayout>
 
-                            android:src="@drawable/kuhusu"
-                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/kuhusu"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
 
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/logout"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/hint"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/kadiria"
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/Vidokezo"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/wateja"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/customers2"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_wateja_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/wateja"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/wateja">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_wateja_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
 
 
-                </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/setting"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
+                    </androidx.cardview.widget.CardView>
 
-                    <LinearLayout
-                        android:layout_width="146dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        tools:ignore="UseCompoundDrawables">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/takwimu"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/graph3"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_takwimu_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/takwimu"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/takwimu">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_takwimu_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
 
-                        <ImageView
-                            android:id="@+id/toka"
-                            android:layout_width="124dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:src="@drawable/logout1"
-                            android:contentDescription="@string/todo"
-                            tools:ignore="ContentDescription" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="@string/toka"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/vidokezo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/bulb"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_vidokezo_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vidokezo"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/vidokezo">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_vidokezo_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
 
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/maoni"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/feedback"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_maoni_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/maoni"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/maoni">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_maoni_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
 
 
-            </GridLayout>
+                        </RelativeLayout>
 
-        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/settings"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/settings2"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_settings_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/settings"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/settings">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_settings_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/ondoka"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/logout"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="TODO">
+                            </ImageView>
+                            <TextView
+                                android:id="@+id/dashboard_ondoka_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ondoka"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/ondoka">
+                            </TextView>
+                            <Button
+                                android:id="@+id/dashboard_ondoka_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent">
+                            </Button>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
     </ScrollView>
 
 
-</LinearLayout>
+</RelativeLayout>

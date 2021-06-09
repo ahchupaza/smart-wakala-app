@@ -25,8 +25,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         tigoPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTigoPesa = new Intent(LoginNetSelectionActivity.this, TigoPesaMainActivity.class);
-                startActivity(goToTigoPesa);
+                startActivity(new Intent(LoginNetSelectionActivity.this, TigoPesaMainActivity.class));
             }
         });
 
@@ -34,8 +33,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         airtelMoneyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToAirtelMoney = new Intent(LoginNetSelectionActivity.this, AirtelMoneyMainActivity.class);
-                startActivity(goToAirtelMoney);
+                startActivity(new Intent(LoginNetSelectionActivity.this, AirtelMoneyMainActivity.class));
             }
         });
 
@@ -43,8 +41,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         haloPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToHaloPesa = new Intent(LoginNetSelectionActivity.this, HaloPesaActivity.class);
-                startActivity(goToHaloPesa);
+                startActivity(new Intent(LoginNetSelectionActivity.this, HaloPesaActivity.class));
             }
         });
 
@@ -52,8 +49,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         mPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToMPesa = new Intent(LoginNetSelectionActivity.this, MPesaActivity.class);
-                startActivity(goToMPesa);
+                startActivity(new Intent(LoginNetSelectionActivity.this, MPesaActivity.class));
             }
         });
 
@@ -61,8 +57,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         tPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTPesa = new Intent(LoginNetSelectionActivity.this, TPesaActivity.class);
-                startActivity(goToTPesa);
+                startActivity(new Intent(LoginNetSelectionActivity.this, TPesaActivity.class));
             }
         });
 
@@ -70,8 +65,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         ezyPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToEzyPesa = new Intent(LoginNetSelectionActivity.this, EzyPesaActivity.class);
-                startActivity(goToEzyPesa);
+                startActivity(new Intent(LoginNetSelectionActivity.this, EzyPesaActivity.class));
             }
         });
     }

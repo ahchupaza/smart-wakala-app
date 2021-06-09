@@ -20,10 +20,8 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
         tigoPesaNumVerificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTigoPesaAgentInfoConfirmationActivity = new Intent(TigoPesaNumVerificationActivity.this, TigoPesaAgentInfoConfirmationActivity.class);
-                startActivity(goToTigoPesaAgentInfoConfirmationActivity);
+                startActivity(new Intent(TigoPesaNumVerificationActivity.this, TigoPesaAgentInfoConfirmationActivity.class));
             }
         });
-
     }
 }

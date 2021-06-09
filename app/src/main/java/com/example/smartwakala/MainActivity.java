@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToLoginActivity = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(goToLoginActivity);
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
 
@@ -31,12 +30,8 @@ public class MainActivity extends AppCompatActivity {
         userHelpText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToUserHelpActivity = new Intent(MainActivity.this, UserHelpActivity.class);
-                startActivity(goToUserHelpActivity);
+                startActivity(new Intent(MainActivity.this, UserHelpActivity.class));
             }
         });
-
-
     }
-
 }

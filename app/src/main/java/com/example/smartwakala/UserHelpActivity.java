@@ -21,10 +21,8 @@ public class UserHelpActivity extends AppCompatActivity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToLoginActivity = new Intent(UserHelpActivity.this, MainActivity.class);
-                startActivity(goToLoginActivity);
+                startActivity(new Intent(UserHelpActivity.this, MainActivity.class));
             }
         });
-
     }
 }

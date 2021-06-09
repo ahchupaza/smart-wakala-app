@@ -11,8 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".ActivityUserDashboard" />
-        <activity android:name=".TigoPesaUsajiliActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".MaoniActivity" />
+        <activity android:name=".VidokezoActivity" />
+        <activity android:name=".UserDashboardActivity" />
+        <activity android:name=".TigoPesaUsajiliActivity" />
         <activity android:name=".TigoPesaIngizaKiasiActivity" />
         <activity android:name=".TigoPesaWakalaKutoaBenkiActivity" />
         <activity android:name=".TigoPesaLughaActivity" />
@@ -25,7 +28,7 @@
         <activity android:name=".TigoPesaNambaYaMtejaActivity" />
         <activity android:name=".TigoPesaIngizaPinActivity" />
         <activity android:name=".TigoPesaUlizaSalioActivity" />
-        <activity android:name=".AirtelMoneyCashDropActivity"></activity>
+        <activity android:name=".AirtelMoneyCashDropActivity" />
         <activity android:name=".AirtelMoneyRejeshaMuamalaActivity" />
         <activity android:name=".AirtelMoneyAkauntiYanguActivity" />
         <activity android:name=".AirtelMoneyHudumaNyingineActivity" />
@@ -38,8 +41,6 @@
         <activity android:name=".AirtelMoneyIngizaKiasiActivity" />
         <activity android:name=".AirtelMoneyIngizaNambayaSimuActivity" />
         <activity android:name=".AccountVerificationActivity" />
-        <activity android:name=".PasswordResetSuccessActivity" />
-        <activity android:name=".PasswordResetActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".RegistrationSuccessActivity" />
         <activity android:name=".UserHelpActivity" />

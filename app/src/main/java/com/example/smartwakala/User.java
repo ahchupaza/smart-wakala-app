@@ -3,7 +3,7 @@ package com.example.smartwakala;
 import android.widget.EditText;
 
 public class User {
-    public String userEmail, userUsername, userPassword1;
+    public String userEmail, userUsername, userPassword;
     public  int userContact;
 
     public User(EditText userContact, EditText userEmail, EditText userUsername, EditText userPassword1){
@@ -14,6 +14,6 @@ public class User {
         this.userContact = userContact;
         this.userEmail = userEmail;
         this.userUsername = userUsername;
-        this.userPassword1 = userPassword1;
+        this.userPassword = userPassword1;
     }
 }
