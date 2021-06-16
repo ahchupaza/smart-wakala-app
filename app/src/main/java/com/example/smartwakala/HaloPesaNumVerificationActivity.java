@@ -20,8 +20,7 @@ public class HaloPesaNumVerificationActivity extends AppCompatActivity {
         haloPesaNumVerificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToHaloPesaAgentInfoConfirmationActivity = new Intent(HaloPesaNumVerificationActivity.this, HaloPesaAgentInfoConfirmationActivity.class);
-                startActivity(goToHaloPesaAgentInfoConfirmationActivity);
+                startActivity(new Intent(HaloPesaNumVerificationActivity.this, HaloPesaAgentInfoConfirmationActivity.class));
             }
         });
     }

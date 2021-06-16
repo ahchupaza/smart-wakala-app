@@ -29,69 +29,39 @@ public class AirtelMoneyMainActivity extends AppCompatActivity {
         airtel_akaunti_yangu = (RadioButton) findViewById(R.id.airtel_akaunti_yangu);
         airtel_rejesha_muamala = (RadioButton) findViewById(R.id.airtel_rejesha_muamala);
 
-
         airtel_continue_button= (Button) findViewById(R.id.airtel_continue_button);
-
         airtel_continue_button.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
-
                 if (airtel_weka_pesa.isChecked()) {
-
                     Intent goToAirtelMoneyIngizaNambayaSimuActivity = new Intent(AirtelMoneyMainActivity.this, AirtelMoneyIngizaNambayaSimuActivity.class);
                     startActivity(goToAirtelMoneyIngizaNambayaSimuActivity);
-
-
-
-
                 }
-                else if(airtel_toa_pesa.isChecked())
-            {
+                else if(airtel_toa_pesa.isChecked()) {
                     Intent goToAirtelMoneyToaPesaActivity = new Intent(AirtelMoneyMainActivity.this, AirtelMoneyToaPesaActivity.class);
                     startActivity(goToAirtelMoneyToaPesaActivity);
-
                 }
                 else if(airtel_uza_muda.isChecked()){
                     Intent goToAirtelMoneyUzamudaWaMaongeziActivity = new Intent(AirtelMoneyMainActivity.this, AirtelMoneyUzamudaWaMaongeziActivity.class);
                     startActivity(goToAirtelMoneyUzamudaWaMaongeziActivity);
-
                 }
                 else if(airtel_uza_bidhaa.isChecked()){
                     Intent goToAirtelMoneyUzaBidhaaActivity= new Intent(AirtelMoneyMainActivity.this, AirtelMoneyUzaBidhaaActivity.class);
                     startActivity(goToAirtelMoneyUzaBidhaaActivity);
-
                 }
-
                 else if(airtel_cash_drop.isChecked()){
                     Intent goToAirtelMoneyCashDropActivity= new Intent(AirtelMoneyMainActivity.this, AirtelMoneyCashDropActivity.class);
                     startActivity(goToAirtelMoneyCashDropActivity);
-
                 }
-
                 else if(airtel_akaunti_yangu.isChecked()){
                     Intent goToAirtelMoneyAkauntiYanguActivity= new Intent(AirtelMoneyMainActivity.this, AirtelMoneyAkauntiYanguActivity.class);
                     startActivity(goToAirtelMoneyAkauntiYanguActivity);
-
                 }
-
                 else {
                     Intent goToAirtelMoneyRejeshaMuamalaActivity= new Intent(AirtelMoneyMainActivity.this, AirtelMoneyRejeshaMuamalaActivity.class);
                     startActivity(goToAirtelMoneyRejeshaMuamalaActivity);
-
                 }
-
-
-
             }
-
-
-
-
         });
-
-
     }
-
-
 }

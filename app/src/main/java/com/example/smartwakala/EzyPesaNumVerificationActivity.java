@@ -20,8 +20,7 @@ public class EzyPesaNumVerificationActivity extends AppCompatActivity {
         ezyPesaNumVerificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToEzyPesaAgentInfoConfirmationActivity = new Intent(EzyPesaNumVerificationActivity.this, EzyPesaAgentInfoConfirmationActivity.class);
-                startActivity(goToEzyPesaAgentInfoConfirmationActivity);
+                startActivity(new Intent(EzyPesaNumVerificationActivity.this, EzyPesaAgentInfoConfirmationActivity.class));
             }
         });
     }
