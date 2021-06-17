@@ -16,7 +16,7 @@
             android:id="@+id/user_profile_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:text="@string/profile_yangu"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
@@ -45,9 +45,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:gravity="center_horizontal"
-            android:text="@string/email_yagu"
+            android:text="@string/barua_pepe"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -60,8 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="24dp"
-            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/user_profile_email_label"
             app:layout_constraintTop_toBottomOf="@+id/tigopesa_agent_profile_picture" />
@@ -88,13 +88,13 @@
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="12dp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/user_profile_phone_no_label"
             app:layout_constraintTop_toBottomOf="@+id/user_profile_email_data" />
 
         <TextView
-            android:id="@+id/tigopesa_agent_username_label"
+            android:id="@+id/user_profile_username_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -109,15 +109,15 @@
             app:layout_constraintTop_toBottomOf="@+id/user_profile_phone_no_label" />
 
         <TextView
-            android:id="@+id/tigopesa_agent_username_data"
+            android:id="@+id/user_profile_username_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="12dp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/tigopesa_agent_username_label"
+            app:layout_constraintStart_toEndOf="@+id/user_profile_username_label"
             app:layout_constraintTop_toBottomOf="@+id/user_profile_phone_no_data" />
 
         <Button
@@ -131,14 +131,15 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/round_edges_button"
-            android:text="@string/i_confirm"
+            android:text="@string/ok"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tigopesa_agent_username_data"
+            app:layout_constraintTop_toBottomOf="@+id/user_profile_username_data"
             app:layout_constraintVertical_bias="0.0" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

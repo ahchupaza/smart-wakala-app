@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,7 @@ public class UserDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_dashboard);
 
+        ImageView profilePicture = (ImageView) findViewById(R.id.dashboard_user_profile_picture);
         Button miamalaButton = (Button) findViewById(R.id.dashboard_miamala_button);
         Button mapatoButton = (Button) findViewById(R.id.dashboard_mapato_button);
         Button watejaButton = (Button) findViewById(R.id.dashboard_wateja_button);
@@ -23,8 +25,15 @@ public class UserDashboardActivity extends AppCompatActivity {
         Button vidokezoButton = (Button) findViewById(R.id.dashboard_vidokezo_button);
         Button maoniButton = (Button) findViewById(R.id.dashboard_maoni_button);
         Button settingsButton = (Button) findViewById(R.id.dashboard_settings_button);
-        Button ondokaButton = (Button) findViewById(R.id.dashboard_ondoka_button);
+        Button logoutButton = (Button) findViewById(R.id.dashboard_ondoka_button);
 
+
+        profilePicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserDashboardActivity.this, UserProfileActivity.class));
+            }
+        });
 
         miamalaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +84,7 @@ public class UserDashboardActivity extends AppCompatActivity {
             }
         });
 
-        ondokaButton.setOnClickListener(new View.OnClickListener() {
+        logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
