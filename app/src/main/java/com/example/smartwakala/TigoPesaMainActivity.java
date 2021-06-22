@@ -33,38 +33,29 @@ public class TigoPesaMainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (ulizaSalio.isChecked()) {
-                    Intent goToUlizaSalioActivity = new Intent(TigoPesaMainActivity.this, TigoPesaUlizaSalioActivity.class);
-                    startActivity(goToUlizaSalioActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaUlizaSalioActivity.class));
                 }
                 else if (usajili.isChecked()){
-                    Intent goToTigoPesaUsajiliActivity = new Intent(TigoPesaMainActivity.this, TigoPesaUsajiliActivity.class);
-                    startActivity(goToTigoPesaUsajiliActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaUsajiliActivity.class));
                 }
                 else if (wekaPesa.isChecked()){
-                    Intent goToTigoPesaNambaYaMtejaActivity = new Intent(TigoPesaMainActivity.this, TigoPesaNambaYaMtejaActivity.class);
-                    startActivity(goToTigoPesaNambaYaMtejaActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaNambaYaMtejaActivity.class));
                 }
                 else if (toaKwaAsiyesajiliwa.isChecked()){
-                    Intent goToTigoPesaNambaYaMpokeajiActivity = new Intent(TigoPesaMainActivity.this, TigoPesaNambaYaMpokeajiActivity.class);
-                    startActivity(goToTigoPesaNambaYaMpokeajiActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaNambaYaMpokeajiActivity.class));
                 }
                 else if (wakalaKutoaPesa.isChecked()){
-                    Intent goToTigoPesaWakalaKutoaPesaActivity = new Intent(TigoPesaMainActivity.this, TigoPesaWakalaKutoaPesaActivity.class);
-                    startActivity(goToTigoPesaWakalaKutoaPesaActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaWakalaKutoaPesaActivity.class));
                 }
                 else if (mudaWaMaongeziEPOD.isChecked()){
-                    Intent goToTigoPesaNambaYaMtejaActivity = new Intent(TigoPesaMainActivity.this, TigoPesaNambaYaMtejaActivity.class);
-                    startActivity(goToTigoPesaNambaYaMtejaActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaNambaYaMtejaActivity.class));
                 }
                 else if (akauntiYangu.isChecked()){
-                    Intent goToTigoPesaAkauntiYanguActivity = new Intent(TigoPesaMainActivity.this, TigoPesaAkauntiYanguActivity.class);
-                    startActivity(goToTigoPesaAkauntiYanguActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaAkauntiYanguActivity.class));
                 }
                 else {
-                    Intent goToTigoPesaWakalaKutoaBenkiActivity = new Intent(TigoPesaMainActivity.this, TigoPesaWakalaKutoaBenkiActivity.class);
-                    startActivity(goToTigoPesaWakalaKutoaBenkiActivity);
+                    startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaWakalaKutoaBenkiActivity.class));
                 }
-
             }
         });
     }

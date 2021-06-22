@@ -20,22 +20,16 @@ public class MPesaAgentInfoConfirmationActivity extends AppCompatActivity {
 
         yes = (RadioButton) findViewById(R.id.mpesa_agent_info_confirm_yes);
         no = (RadioButton) findViewById(R.id.mpesa_agent_info_confirm_no);
+
         mPesaAgentInfoConfirmationButton = (Button)findViewById(R.id.mpesa_agent_info_confirmation_button);
-
-
         mPesaAgentInfoConfirmationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (yes.isChecked()) {
-
-                    Intent goToUserRegistrationActivity = new Intent(MPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class);
-                    startActivity(goToUserRegistrationActivity);
-
+                    startActivity(new Intent(MPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class));
                 }
                 else {
-                    Intent goToTPesaNumVerification = new Intent(MPesaAgentInfoConfirmationActivity.this, MPesaNumVerificationActivity.class);
-                    startActivity(goToTPesaNumVerification);
-
+                    startActivity(new Intent(MPesaAgentInfoConfirmationActivity.this, MPesaNumVerificationActivity.class));
                 }
             }
         });

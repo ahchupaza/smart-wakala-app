@@ -20,8 +20,7 @@ public class TwoFactorAuthenticationActivity extends AppCompatActivity {
         otpSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToLoginActivity = new Intent(TwoFactorAuthenticationActivity.this, RegistrationSuccessActivity.class);
-                startActivity(goToLoginActivity);
+                startActivity(new Intent(TwoFactorAuthenticationActivity.this, RegistrationSuccessActivity.class));
             }
         });
     }

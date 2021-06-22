@@ -1,43 +1,96 @@
 package com.example.smartwakala;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class TigoPesaAgentInfoConfirmationActivity extends AppCompatActivity {
 
-    Button tigoPesaAgentInfoConfirmationButton;
-    RadioButton yes, no;
+    private DatabaseReference dbRef;
+    private TextView ID_no, fname, mname, lname, birthdate, licence_no, SIM_no, code_no, TIN_no, business_region;
+    private Button tigoPesaAgentInfoConfirmationButton;
+    private RadioButton yes, no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tigo_pesa_agent_info_confirmation);
 
-        yes = (RadioButton) findViewById(R.id.tigopesa_agent_info_confirm_yes);
-        no = (RadioButton) findViewById(R.id.tigopesa_agent_info_confirm_no);
-        tigoPesaAgentInfoConfirmationButton = (Button)findViewById(R.id.tigopesa_agent_info_confirmation_button);
+        ID_no = findViewById(R.id.tigopesa_agent_id_no_data);
+        fname = findViewById(R.id.tigopesa_agent_f_name_data);
+        mname = findViewById(R.id.tigopesa_agent_m_name_data);
+        lname = findViewById(R.id.tigopesa_agent_l_name_data);
+        birthdate = findViewById(R.id.tigopesa_agent_birth_date_data);
+        licence_no = findViewById(R.id.tigopesa_agent_licence_no__data);
+        SIM_no = findViewById(R.id.tigopesa_agent_no__data);
+        code_no = findViewById(R.id.tigopesa_agent_code_data);
+        TIN_no = findViewById(R.id.tigopesa_agent_tin_no__data);
+        business_region = findViewById(R.id.tigopesa_agent_region_data);
+        yes = findViewById(R.id.tigopesa_agent_info_confirm_yes);
+        no = findViewById(R.id.tigopesa_agent_info_confirm_no);
+        tigoPesaAgentInfoConfirmationButton = findViewById(R.id.tigopesa_agent_info_confirmation_button);
+
+        dbRef = FirebaseDatabase.getInstance().getReference("Wakalas").child("-McJd4rKl-F4yAgbDLOT");
+        dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                String wakalaID = dataSnapshot.child("ID_No").getValue().toString();
+                String wakalaFName = dataSnapshot.child("FirstName").getValue().toString();
+                String wakalaMName = dataSnapshot.child("MiddleName").getValue().toString();
+                String wakalaLName = dataSnapshot.child("LastName").getValue().toString();
+                String wakalaDoB = dataSnapshot.child("DoB").getValue().toString();
+                String wakalaLicence = dataSnapshot.child("Licence_No").getValue().toString();
+                String wakalaSIM = dataSnapshot.child("SIM_No").getValue().toString();
+                String wakalaCode = dataSnapshot.child("Code_No").getValue().toString();
+                String wakalaTIN = dataSnapshot.child("TIN_No").getValue().toString();
+                String wakalaRegion = dataSnapshot.child("BusinessRegion").getValue().toString();
+
+                ID_no.setText(wakalaID);
+                fname.setText(wakalaFName);
+                mname.setText(wakalaMName);
+                lname.setText(wakalaLName);
+                birthdate.setText(wakalaDoB);
+                licence_no.setText(wakalaLicence);
+                SIM_no.setText(wakalaSIM);
+                code_no.setText(wakalaCode);
+                TIN_no.setText(wakalaTIN);
+                business_region.setText(wakalaRegion);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(TigoPesaAgentInfoConfirmationActivity.this, "Haukufanikisha, jaribu tena..!", Toast.LENGTH_LONG).show();
+            }
+        });
 
         tigoPesaAgentInfoConfirmationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (yes.isChecked()) {
-
-                    Intent goToUserRegistrationActivity = new Intent(TigoPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class);
-                    startActivity(goToUserRegistrationActivity);
+                    startActivity(new Intent(TigoPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class));
 
                 }
                 else {
-                    Intent goToTigoPesaNumVerification = new Intent(TigoPesaAgentInfoConfirmationActivity.this, TigoPesaNumVerificationActivity.class);
-                    startActivity(goToTigoPesaNumVerification);
-
+                    startActivity(new Intent(TigoPesaAgentInfoConfirmationActivity.this, TigoPesaNumVerificationActivity.class));
                 }
             }
         });
-
     }
 }

@@ -20,8 +20,7 @@ public class TPesaNumVerificationActivity extends AppCompatActivity {
         TPesaNumVerificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToTPesaAgentInfoConfirmationActivity = new Intent(TPesaNumVerificationActivity.this, TPesaAgentInfoConfirmationActivity.class);
-                startActivity(goToTPesaAgentInfoConfirmationActivity);
+                startActivity(new Intent(TPesaNumVerificationActivity.this, TPesaAgentInfoConfirmationActivity.class));
             }
         });
     }

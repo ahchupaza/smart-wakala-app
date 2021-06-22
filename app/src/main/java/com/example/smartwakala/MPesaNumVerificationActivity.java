@@ -20,8 +20,7 @@ public class MPesaNumVerificationActivity extends AppCompatActivity {
         mPesaNumVerificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToMPesaAgentInfoConfirmationActivity = new Intent(MPesaNumVerificationActivity.this, MPesaAgentInfoConfirmationActivity.class);
-                startActivity(goToMPesaAgentInfoConfirmationActivity);
+                startActivity(new Intent(MPesaNumVerificationActivity.this, MPesaAgentInfoConfirmationActivity.class));
             }
         });
     }
