@@ -1,15 +1,17 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.2.3@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/469cf872bfb704d767b3bd20cebcc6ba/jetified-activity-1.2.3/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/e349d76df1d08f730f152134fdbc06b5/jetified-activity-1.2.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/c58750fa5437048d48448e966dbb45b1/jetified-activity-1.2.3/res" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/0901a513914679146ad916c106d047b8/jetified-activity-1.2.3/res" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/b782db2dc94a2684da131c4077411791/jetified-activity-1.2.3/res" />
-      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/469cf872bfb704d767b3bd20cebcc6ba/jetified-activity-1.2.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/469cf872bfb704d767b3bd20cebcc6ba/jetified-activity-1.2.3/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/469cf872bfb704d767b3bd20cebcc6ba/jetified-activity-1.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/4e9e6e647735daaffb17a5b9fa91f9e5/jetified-activity-1.2.3/res" />
+      <root url="jar://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/e349d76df1d08f730f152134fdbc06b5/jetified-activity-1.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/e349d76df1d08f730f152134fdbc06b5/jetified-activity-1.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../Android-Login-And-Registration/.gradle/caches/transforms-2/files-2.1/e349d76df1d08f730f152134fdbc06b5/jetified-activity-1.2.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

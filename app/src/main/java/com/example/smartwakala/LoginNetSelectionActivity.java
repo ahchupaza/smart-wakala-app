@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
+import androidx.appcompat.widget.Toolbar;
 
 public class LoginNetSelectionActivity extends AppCompatActivity {
 
@@ -21,7 +24,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_net_selection);
 
-        tigoPesaButton = (Button)findViewById(R.id.tigo_pesa_button);
+        tigoPesaButton = findViewById(R.id.tigo_pesa_button);
         tigoPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,7 +32,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
             }
         });
 
-        airtelMoneyButton =(Button) findViewById(R.id.airtel_money_button);
+        airtelMoneyButton = findViewById(R.id.airtel_money_button);
         airtelMoneyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +40,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
             }
         });
 
-        haloPesaButton = (Button)findViewById(R.id.halo_pesa_button);
+        haloPesaButton = findViewById(R.id.halo_pesa_button);
         haloPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +48,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
             }
         });
 
-        mPesaButton = (Button)findViewById(R.id.m_pesa_button);
+        mPesaButton = findViewById(R.id.m_pesa_button);
         mPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +56,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
             }
         });
 
-        tPesaButton = (Button)findViewById(R.id.t_pesa_button);
+        tPesaButton = findViewById(R.id.t_pesa_button);
         tPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,7 +64,7 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
             }
         });
 
-        ezyPesaButton = (Button)findViewById(R.id.ezy_pesa_button);
+        ezyPesaButton = findViewById(R.id.ezy_pesa_button);
         ezyPesaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,4 +72,11 @@ public class LoginNetSelectionActivity extends AppCompatActivity {
             }
         });
     }
-}
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.menu, menu);
+//        return true;}
+
+    }

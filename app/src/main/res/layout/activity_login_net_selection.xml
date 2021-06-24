@@ -8,6 +8,10 @@
     android:fillViewport="false"
     tools:context=".LoginNetSelectionActivity">
 
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
