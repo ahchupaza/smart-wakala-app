@@ -7,4 +7,5 @@
     <color name="colorSuccess">#1FA600</color>
     <color name="colorWarning">#FFEA30</color>
     <color name="colorDanger">#911B1B</color>
+    <color name="fui_transparent">#00FF0000</color>
 </resources>

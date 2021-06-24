@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".MaoniActivity" />
         <activity android:name=".VidokezoActivity" />
         <activity android:name=".UserDashboardActivity" />

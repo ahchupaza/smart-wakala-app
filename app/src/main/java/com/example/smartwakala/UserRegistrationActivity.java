@@ -127,7 +127,7 @@ public class UserRegistrationActivity extends AppCompatActivity implements View.
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            User user =  new  User(userContact, userEmail, userUsername, userPassword);
+                            User user =  new  User(contact, email, username, password);
 
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getUid())

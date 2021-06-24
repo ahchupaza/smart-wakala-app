@@ -30,7 +30,7 @@
     <string name="submit_users_new_password">Wasilisha Ombi</string>
     <string name="submit_users_amount_request">Wasilisha Ombi</string>
     <string name="submit_users_reset_password_email">Wasilisha Ombi</string>
-    <string name="forgot_password">Nimesahau neno-siri!</string>
+    <string name="forgot_password">Nimesahau neno-siri langu!</string>
     <string name="register_here">Mtumiaji mpya? Jisajili hapa!</string>
     <string name="chagua_aina_ya_muamala">Chagua aina ya huduma</string>
     <string name="numbers">numbers</string>
@@ -79,13 +79,13 @@
     <string name="first_name_label">Jina la kwanza:</string>
     <string name="middle_name_label">Jina la kati:</string>
     <string name="last_name_label">Jina la ukoo:</string>
-    <string name="agent_birth_date_label">Umezaliwa:</string>
+    <string name="agent_birth_date_label">Kuzaliwa:</string>
     <string name="id_no._label">Kitambulisho No:</string>
     <string name="SIM_no._label">Laini No:</string>
     <string name="agent_code_label">Code No:</string>
     <string name="tin_no._label">TIN No:</string>
     <string name="licence_no._label">Leseni No:</string>
-    <string name="agent_business_region_label">Mkoa wa biashara:</string>
+    <string name="agent_business_region_label">Mkoa:</string>
     <string name="about_smartwakala_app_text">Kuhusu SmartWakala App</string>
     <string name="about_smartwakala_app_note">Karibu kwenye App ya SmartWakala. App hii ni maalum
     kwa ajili ya kuwasaidia mawakala wa mitandao ya simu nchini Tanzania kufanya miamala yao kwa
@@ -172,6 +172,11 @@
     <string name="maoni">Maoni</string>
     <string name="settings">Settings</string>
     <string name="miamala">Miamala</string>
+    <string name="profile_yangu">WASIFU WANGU</string>
+    <string name="email_yagu">Email yagu:</string>
+    <string name="namba_yangu_ya_simu">Namba ya simu:</string>
+    <string name="username_yangu">Username yangu:</string>
+    <string name="barua_pepe">Barua pepe:</string>
 
 
     <!--    mpesa-->
