@@ -3,6 +3,7 @@ package com.example.smartwakala;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -55,21 +56,28 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
         tigoPesaNumSearch = findViewById(R.id.tigoPesaNumToBeRegistered);
         tigoPesaNum = findViewById(R.id.tigoPesaNumToBeRegistered);
 
-//        wakalaSIMNo = findViewById(R.id.tigopesa_agent_SIM_no_verified_data);
-
         progressBar = findViewById(R.id.tigopesa_num_verification_loading);
         tigoPesaNumVerificationButton = findViewById(R.id.tigopesa_num_verification_hakiki_button);
 
         tigoPesaNumVerificationButton.setOnClickListener(view -> {
 
             if (tigoPesaNum.getText().toString().isEmpty()) {
-                tigoPesaNum.setError("Ingiza Namba");
+                tigoPesaNum.setError("Haujaingiza namba!");
+                tigoPesaNum.requestFocus();
+
+                return;
+            }
+
+            if (tigoPesaNum.length() < 10){
+                tigoPesaNum.setError("Tarakimu hazijakamilika 10!");
                 tigoPesaNum.requestFocus();
 
                 return;
             }
 
             String tigoPesaNumber = tigoPesaNum.getText().toString();
+
+            progressBar.setVisibility(View.VISIBLE);
 
             DatabaseReference dbRef = database.getReference("Wakalas");
             dbRef.addValueEventListener(new ValueEventListener() {
@@ -103,15 +111,21 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
                                         realm.insertOrUpdate(wakala);
 
                                         startActivity(new Intent(getApplicationContext(), TigoPesaAgentInfoConfirmationActivity.class));
+
+                                        progressBar.setVisibility(View.GONE);
+
                                     }
                                 });
                             }finally {
                                 if (realm != null) {
                                     realm.close();
                                 }
-
                             }
                         }
+//                        else
+//                            Toast.makeText(TigoPesaNumVerificationActivity.this, "Samahani, hakuna usajili wenye namba hiyo. Tafadhali jaribu tena!", Toast.LENGTH_SHORT).show();
+//                             progressBar.setVisibility(View.GONE);
+
                         //print to logcat
                         Log.d(TAG, "onDataChange: " + childSnapshot);
                     }
@@ -126,34 +140,6 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
         });
     }
 
-//    public void verifyWakalaNumber() {
-//        String tigoPesaAgentNum = tigoPesaNumSearch.getText().toString().trim();
-//
-//        if (tigoPesaAgentNum.isEmpty()){
-//            tigoPesaNumSearch.setError("Haujaingiza namba!");
-//            tigoPesaNumSearch.requestFocus();
-//            return;
-//        }
-//
-//        progressBar.setVisibility(View.VISIBLE);
-//
-//        dbRef = (DatabaseReference) FirebaseDatabase.getInstance().getReference("Wakalas").child("SIM_No").equalTo(tigoPesaAgentNum);
-//        dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                String wakalaNo = dataSnapshot.child(tigoPesaAgentNum).getValue().toString();
-//                wakalaSIMNo.setText(wakalaNo);
-//                progressBar.setVisibility(View.GONE);
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//                Toast.makeText(TigoPesaNumVerificationActivity.this, "Haukufanikisha, jaribu tena..!", Toast.LENGTH_LONG).show();
-//                progressBar.setVisibility(View.GONE);
-//            }
-//        });
-//
-//    }
 }
 
 
