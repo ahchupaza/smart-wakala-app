@@ -32,6 +32,8 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
     EditText namba, kiasi;
     String mKiasi, mNamba;
     long balance;
+    long balanceMteja;
+    String mtejaId;
 
     BasicJobs bj;
     String wakalaNamba, wakalaID;
@@ -135,7 +137,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            finish();
+                            updateMtejaSalio();
                         }
                     })
 
@@ -148,6 +150,8 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
+
+
 
 
         })
@@ -232,6 +236,8 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
 
                     String firstname = childSnapshot.child("FirstName").getValue().toString();
                     String lastname = childSnapshot.child("LastName").getValue().toString();
+                    balanceMteja = (long) childSnapshot.child("Balance").getValue();
+                    mtejaId = childSnapshot.getKey();
 
                     Log.d("TAG", "onDataChange Wakala Namba: " + number);
                     Log.d("TAG", "onDataChange: " + nambaMteja);
@@ -256,6 +262,21 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void updateMtejaSalio() {
+
+        FirebaseDatabase  database = FirebaseDatabase.getInstance();
+        DatabaseReference mDatabaseRef = database.getReference().child("Mteja").child(mtejaId);
+
+        Map<String, Object> hopperUpdates = new HashMap<>();
+        hopperUpdates.put("Balance", balanceMteja);
+
+        mDatabaseRef.updateChildren(hopperUpdates).addOnSuccessListener(unused -> {
+            Toast.makeText(this, "Mteja balance updated", Toast.LENGTH_SHORT).show();
+        });
+
+        finish();
     }
 
 }
