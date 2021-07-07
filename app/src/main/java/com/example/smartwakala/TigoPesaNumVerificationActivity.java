@@ -79,7 +79,7 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
 
             progressBar.setVisibility(View.VISIBLE);
 
-            DatabaseReference dbRef = database.getReference("Wakalas");
+            DatabaseReference dbRef = database.getReference("Wakala");
             dbRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
@@ -89,7 +89,7 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
 
                         if (number.equals(tigoPesaNumber)) {
                             Wakala wakala = childSnapshot.getValue(Wakala.class);
-                            Log.d(TAG, "onDataChange Firstaname: " + wakala.getFirstName());
+                            Log.d("TAG", "onDataChange Firstaname: " + wakala.getFirstName());
 
 
                             /** Ordinary way to store data to realm
@@ -127,7 +127,7 @@ public class TigoPesaNumVerificationActivity extends AppCompatActivity {
 //                             progressBar.setVisibility(View.GONE);
 
                         //print to logcat
-                        Log.d(TAG, "onDataChange: " + childSnapshot);
+                        Log.d("TAG", "onDataChange: " + childSnapshot);
                     }
                 }
 
