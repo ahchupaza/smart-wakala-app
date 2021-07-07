@@ -138,7 +138,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
 
-                            balanceMteja = Long.parseLong(balanceMteja + mKiasi);
+                            balanceMteja += Long.parseLong(mKiasi);
                             updateMtejaSalio();
                         }
                     })
