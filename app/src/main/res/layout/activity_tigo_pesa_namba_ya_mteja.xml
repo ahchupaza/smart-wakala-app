@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
-    tools:context=".TigoPesaNambaYaMtejaActivity">
+    tools:context=".tigo.TigoPesaNambaYaMtejaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,8 +29,24 @@
             android:importantForAutofill="no"
             android:inputType="phone"
             android:maxLength="10"
-            android:maxLines="1"
-            tools:text="@string/ingiza_namba_ya_simu_ya_mteja" />
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/customer_amount_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Ingiza kiasi"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"/>
 
         <Button
             android:id="@+id/customer_number_submit_button"

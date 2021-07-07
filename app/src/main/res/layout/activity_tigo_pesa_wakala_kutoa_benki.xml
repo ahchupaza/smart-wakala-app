@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
-    tools:context=".TigoPesaWakalaKutoaBenkiActivity">
+    tools:context=".tigo.TigoPesaWakalaKutoaBenkiActivity">
 
     <ScrollView
         android:id="@+id/tigopesa_wakala_kutoa_benki_layout"

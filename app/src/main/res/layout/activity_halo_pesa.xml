@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
-    tools:context=".HaloPesaActivity">
+    tools:context=".halotel.HaloPesaActivity">
 
     <ScrollView
         android:id="@+id/halopesa_layout"
