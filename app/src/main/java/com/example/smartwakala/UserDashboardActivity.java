@@ -109,6 +109,8 @@ public class UserDashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
+
+                realm.deleteAll();
                 startActivity(new Intent(UserDashboardActivity.this, LoginActivity.class));
             }
         });
