@@ -137,6 +137,8 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
+
+                            balanceMteja = Long.parseLong(balanceMteja + mKiasi);
                             updateMtejaSalio();
                         }
                     })
