@@ -103,6 +103,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     if (user.isEmailVerified()){
                         startActivity(new Intent(LoginActivity.this, UserDashboardActivity.class));
                         progressBar.setVisibility(View.GONE);
+                        finish();
                     }
                     else {
                         Toast.makeText(LoginActivity.this, "Tafadhali, thibitisha kwanza anwani yako ya barua pepe na ujaribu tena!", Toast.LENGTH_LONG).show();

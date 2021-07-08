@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smartwakala_background"
     android:fillViewport="false"
-    tools:context=".HaloPesaAgentInfoConfirmationActivity">
+    tools:context=".halotel.HaloPesaAgentInfoConfirmationActivity">
 
     <ScrollView
         android:id="@+id/halopesa_agent_info_confirmation_layout"

@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
-import androidx.appcompat.widget.Toolbar;
+
+import com.example.smartwakala.airtel.AirtelMoneyMainActivity;
+import com.example.smartwakala.halotel.HaloPesaActivity;
+import com.example.smartwakala.tigo.TigoPesaMainActivity;
+import com.example.smartwakala.ttcl.TPesaActivity;
+import com.example.smartwakala.vodacom.MPesaActivity;
+import com.example.smartwakala.zantel.EzyPesaActivity;
 
 public class LoginNetSelectionActivity extends AppCompatActivity {
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
-    tools:context=".AirtelMoneyToaPesaActivity">
+    tools:context=".airtel.AirtelMoneyToaPesaActivity">
 
     <ScrollView
         android:id="@+id/airtelmoney_layout"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
-    tools:context=".AirtelMoneyIngizaKiasiActivity">
+    tools:context=".airtel.AirtelMoneyIngizaKiasiActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

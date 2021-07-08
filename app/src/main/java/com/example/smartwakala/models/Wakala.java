@@ -12,10 +12,9 @@ public class Wakala extends RealmObject {
 
     private String FirstName, MiddleName, LastName, DoB, Licence_No, SIM_No, Code_No, TIN_No, BusinessRegion;
 
-    public Wakala() {
-    }
+    private long Balance, Kamisheni;
 
-    public Wakala(String ID_No, String firstName, String middleName, String lastName, String doB, String licence_No, String SIM_No, String code_No, String TIN_No, String businessRegion) {
+    public Wakala(String ID_No, String firstName, String middleName, String lastName, String doB, String licence_No, String SIM_No, String code_No, String TIN_No, String businessRegion, long balance, long kamisheni) {
         this.ID_No = ID_No;
         FirstName = firstName;
         MiddleName = middleName;
@@ -26,6 +25,11 @@ public class Wakala extends RealmObject {
         Code_No = code_No;
         this.TIN_No = TIN_No;
         BusinessRegion = businessRegion;
+        Balance = balance;
+        Kamisheni = kamisheni;
+    }
+
+    public Wakala() {
     }
 
     public String getID_No() {
@@ -108,6 +112,19 @@ public class Wakala extends RealmObject {
         BusinessRegion = businessRegion;
     }
 
+    public long getBalance() {
+        return Balance;
+    }
 
+    public void setBalance(long balance) {
+        Balance = balance;
+    }
 
+    public long getKamisheni() {
+        return Kamisheni;
+    }
+
+    public void setKamisheni(long kamisheni) {
+        Kamisheni = kamisheni;
+    }
 }

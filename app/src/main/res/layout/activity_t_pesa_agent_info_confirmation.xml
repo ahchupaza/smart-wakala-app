@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smartwakala_background"
     android:fillViewport="false"
-    tools:context=".TPesaAgentInfoConfirmationActivity">
+    tools:context=".ttcl.TPesaAgentInfoConfirmationActivity">
 
     <ScrollView
         android:id="@+id/tpesa_agent_info_confirmation_layout"

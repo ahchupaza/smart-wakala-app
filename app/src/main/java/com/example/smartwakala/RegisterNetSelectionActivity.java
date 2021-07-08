@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.smartwakala.airtel.AirtelMoneyNumVerificationActivity;
+import com.example.smartwakala.halotel.HaloPesaNumVerificationActivity;
+import com.example.smartwakala.tigo.TigoPesaNumVerificationActivity;
+import com.example.smartwakala.ttcl.TPesaNumVerificationActivity;
+import com.example.smartwakala.vodacom.MPesaNumVerificationActivity;
+import com.example.smartwakala.zantel.EzyPesaNumVerificationActivity;
+
 public class RegisterNetSelectionActivity extends AppCompatActivity {
 
     Button tigoPesaButton2;
