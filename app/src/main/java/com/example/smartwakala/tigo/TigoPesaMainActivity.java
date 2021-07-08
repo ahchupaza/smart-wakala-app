@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.example.smartwakala.R;
 
@@ -58,8 +59,11 @@ public class TigoPesaMainActivity extends AppCompatActivity {
                 else if (akauntiYangu.isChecked()){
                     startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaAkauntiYanguActivity.class));
                 }
-                else {
+                else if (toaPesaBenki.isChecked()){
                     startActivity(new Intent(TigoPesaMainActivity.this, TigoPesaWakalaKutoaBenkiActivity.class));
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "Haujafanya chaguo lolote!", Toast.LENGTH_LONG).show();
                 }
             }
         });
