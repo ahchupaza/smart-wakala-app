@@ -99,6 +99,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(task.isSuccessful()){
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
+                    assert user != null;
                     if (user.isEmailVerified()){
                         startActivity(new Intent(LoginActivity.this, UserDashboardActivity.class));
                         progressBar.setVisibility(View.GONE);

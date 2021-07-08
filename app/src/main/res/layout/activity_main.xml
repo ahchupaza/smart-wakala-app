@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lukusmart_background2"
+    android:background="@drawable/smartwakala_background"
     android:fillViewport="true"
     tools:context=".MainActivity">
 
@@ -20,7 +20,7 @@
             android:layout_height="190dp"
             android:layout_marginTop="80dp"
             android:layout_marginBottom="30dp"
-            app:srcCompat="@drawable/wakalasmart_logo1"
+            app:srcCompat="@drawable/smartwakala_logo"
             tools:ignore="ContentDescription" />
 
         <ProgressBar

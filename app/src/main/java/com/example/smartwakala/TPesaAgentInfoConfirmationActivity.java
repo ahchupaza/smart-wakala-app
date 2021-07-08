@@ -18,14 +18,15 @@ public class TPesaAgentInfoConfirmationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_t_pesa_agent_info_confirmation);
 
-        yes = (RadioButton) findViewById(R.id.tpesa_agent_info_confirm_yes);
-        no = (RadioButton) findViewById(R.id.tpesa_agent_info_confirm_no);
+        yes = findViewById(R.id.tpesa_agent_info_confirm_yes);
+        no = findViewById(R.id.tpesa_agent_info_confirm_no);
 
-        TPesaAgentInfoConfirmationButton = (Button)findViewById(R.id.tpesa_agent_info_confirmation_button);
+        TPesaAgentInfoConfirmationButton = findViewById(R.id.tpesa_agent_info_confirmation_button);
         TPesaAgentInfoConfirmationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (yes.isChecked()) {
+
                     startActivity(new Intent(TPesaAgentInfoConfirmationActivity.this, UserRegistrationActivity.class));
                 }
                 else {
