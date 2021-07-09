@@ -3,6 +3,7 @@ package com.example.smartwakala.airtel;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.smartwakala.models.Wakala;
+import com.example.smartwakala.tigo.TigoPesaAgentInfoConfirmationActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -87,6 +89,7 @@ public class AirtelMoneyNumVerificationActivity extends AppCompatActivity {
 
                 DatabaseReference dbRef = database.getReference("Wakala");
                 dbRef.addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("LongLogTag")
                     @Override
                     public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                         //for loop to retrieve the child node
@@ -119,7 +122,6 @@ public class AirtelMoneyNumVerificationActivity extends AppCompatActivity {
                                             startActivity(new Intent(getApplicationContext(), TigoPesaAgentInfoConfirmationActivity.class));
 
                                             progressBar.setVisibility(View.GONE);
-
                                         }
                                     });
                                 }finally {

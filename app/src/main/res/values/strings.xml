@@ -183,6 +183,19 @@
     <string name="sanduku_la_maoni">SANDUKU LA MAONI</string>
     <string name="andika_maoni_yako">Andika maoni yako..</string>
     <string name="tuma_maoni">TUMA MAONI</string>
+    <string name="hint">Endapo App yako imeshindwa kufunguka jaribu kufanya yafuatayo</string>
+    <string name="aplikeshen_kukwama">1: Aplikeshen inagoma?</string>
+    <string name="aplikeshen_kushindwa_kuleta_matokeo">2: Aplikeshen haileti matokeo?</string>
+    <string name="usalama_mtandaoni">3: Kuwa salama mtandaoni.</string>
+    <string name="angalia_mtandao">Angalia kama simu yako imeunganishwa na mtandao, pia angalia kama una kifurushi cha intaneti.
+        Wakati mwingine tatizo huwa siyo simu yako, bali tatizo la kifundi kwenye mtandao wa intaneti.</string>
+    <string name="funga_na_ufungue_tena_aplikeshen">Wakati mwingine, aplikeshen huweza kukwama au kugoma katika matumizi yake ya kawaida. Hali hii
+    mara nyingi huweza kusababishwa na matumizi ya simu yenyewe. Hivyo basi, hatua ya kwanza ya kujaribu kutatua tatizo ni kuifunga na kuifungua upya aplikeshen.
+    Endapo haitosaidia, basi izime simu na uiwashe tena, na isiposaidia bas itoe aplikeshen kwenye simu na uipakue upya.</string>
+    <string name="kuwa_salama_mtandaoni">Ni muhimu zaidi kuchukua tahadhari juu ya kuhakikisha usalama wako na pesa zako mtandaoni.
+        wa kudhibitisha usalama wa shughuli za mkondoni ni baada ya ukweli.
+        Neno-siri lako ni siri yako, usimtajie mtu mwingine usiemwamini. Ukiona kitu chochote cha kutiliwa shaka, tahadhari kampuni ya simu  mara moja</string>
+    <string name="vidokezo_muhimu">VIDOKEZO MUHIMU</string>
 
 
     <!--    mpesa-->

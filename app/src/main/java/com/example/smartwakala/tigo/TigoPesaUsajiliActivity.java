@@ -2,11 +2,16 @@ package com.example.smartwakala.tigo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.smartwakala.MainActivity;
 import com.example.smartwakala.R;
+import com.example.smartwakala.UserHelpActivity;
 import com.example.smartwakala.models.Wakala;
 
 import io.realm.Realm;
@@ -19,10 +24,14 @@ public class TigoPesaUsajiliActivity extends AppCompatActivity {
     private String wakalaID, wakalaFName, wakalaMName, wakalaLName, wakalaDoB ,
             wakalaLicence, wakalaSIM, wakalaCode, wakalaTIN, wakalaRegion;
 
+    private Button okButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tigo_pesa_usajili);
+
+        okButton = (Button) findViewById(R.id.tigopesa_agent_usajili_ok_button);
 
         Realm.init(TigoPesaUsajiliActivity.this);
         Realm realm = Realm.getDefaultInstance();
@@ -68,6 +77,13 @@ public class TigoPesaUsajiliActivity extends AppCompatActivity {
         code_no.setText(wakalaCode);
         TIN_no.setText(wakalaTIN);
         business_region.setText(wakalaRegion);
+
+        okButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TigoPesaUsajiliActivity.this, TigoPesaMainActivity.class));
+            }
+        });
 
 
     }

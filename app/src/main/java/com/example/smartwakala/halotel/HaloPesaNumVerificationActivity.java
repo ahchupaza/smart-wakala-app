@@ -3,6 +3,7 @@ package com.example.smartwakala.halotel;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -89,6 +90,7 @@ public class HaloPesaNumVerificationActivity extends AppCompatActivity {
 
                 DatabaseReference dbRef = database.getReference("Wakala");
                 dbRef.addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("LongLogTag")
                     @Override
                     public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                         //for loop to retrieve the child node
@@ -118,7 +120,7 @@ public class HaloPesaNumVerificationActivity extends AppCompatActivity {
                                         public void execute(Realm realm) {
                                             realm.insertOrUpdate(wakala);
 
-                                            startActivity(new Intent(getApplicationContext(), TigoPesaAgentInfoConfirmationActivity.class));
+                                            startActivity(new Intent(getApplicationContext(), HaloPesaNumVerificationActivity.class));
 
                                             progressBar.setVisibility(View.GONE);
 

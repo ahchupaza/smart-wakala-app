@@ -65,13 +65,13 @@
                     android:text="@string/uliza_salio"
                     android:textSize="18sp"/>
 
-                <RadioButton
-                    android:id="@+id/tigopesa_taarifa_fupi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/taarifa_fupi"
-                    android:textSize="18sp"/>
+<!--                <RadioButton-->
+<!--                    android:id="@+id/tigopesa_taarifa_fupi"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:text="@string/taarifa_fupi"-->
+<!--                    android:textSize="18sp"/>-->
 
                 <RadioButton
                     android:id="@+id/tigopesa_angalia_kamisheni"

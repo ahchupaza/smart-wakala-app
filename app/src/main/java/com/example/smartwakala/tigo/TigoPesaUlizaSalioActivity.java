@@ -5,13 +5,17 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.smartwakala.MainActivity;
 import com.example.smartwakala.R;
+import com.example.smartwakala.UserHelpActivity;
 import com.example.smartwakala.models.Wakala;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,6 +30,7 @@ import io.realm.RealmResults;
 public class TigoPesaUlizaSalioActivity extends AppCompatActivity {
 
     private TextView rudiMenuKuu;
+    private TextView rudiNyuma;
     RadioButton ulizaSalio, kamisheni;
 
     FirebaseDatabase database;
@@ -41,6 +46,7 @@ public class TigoPesaUlizaSalioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tigo_pesa_uliza_salio);
 
         rudiMenuKuu = findViewById (R.id.back_to_main_menu_activity);
+        rudiNyuma = findViewById (R.id.back_to_previous_activity);
         kamisheni = findViewById(R.id.tigopesa_angalia_kamisheni);
         ulizaSalio = findViewById(R.id.tigopesa_uliza_salio_uliza_salio);
 
@@ -53,15 +59,27 @@ public class TigoPesaUlizaSalioActivity extends AppCompatActivity {
             if (ulizaSalio.isChecked()){
 
                 checkBalance();
-                Toast.makeText(this, "Checking balance..", Toast.LENGTH_SHORT).show();
-
-
+//                Toast.makeText(this, "Tafadhali subiri..", Toast.LENGTH_SHORT).show();
 
             }else if (kamisheni.isChecked()){
-                Toast.makeText(this, "kamisheni ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Tafadhali subiri..", Toast.LENGTH_SHORT).show();
 
             }else {
-                Toast.makeText(this, "Please make a selection to continue", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Haujafanya chaguo!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        rudiMenuKuu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TigoPesaUlizaSalioActivity.this, TigoPesaMainActivity.class));
+            }
+        });
+
+        rudiNyuma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TigoPesaUlizaSalioActivity.this, TigoPesaMainActivity.class));
             }
         });
 
@@ -77,7 +95,7 @@ public class TigoPesaUlizaSalioActivity extends AppCompatActivity {
         if (results != null) {
             for (Wakala wakala : results) {
 
-                Toast.makeText(this, "Please wait...", Toast.LENGTH_LONG).show();
+//                Toast.makeText(this, "Tafadhali subiri..", Toast.LENGTH_SHORT).show();
                 Log.d("wakala cm", "checkBalance: " + wakala.getSIM_No());
 
                 DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("Wakala");
@@ -98,7 +116,7 @@ public class TigoPesaUlizaSalioActivity extends AppCompatActivity {
 
                                 new AlertDialog.Builder(TigoPesaUlizaSalioActivity.this)
                                         .setTitle("Salio la Akaunti")
-                                        .setMessage("Salio lako la akaunti ni kiasi cha Tsh." + wakala.getBalance() + "/= ")
+                                        .setMessage("Salio la akaunti yako ni Tsh." + wakala.getBalance() + "/= ")
 
                                         // Specifying a listener allows you to take an action before dismissing the dialog.
                                         // The dialog is automatically dismissed when a dialog button is clicked.

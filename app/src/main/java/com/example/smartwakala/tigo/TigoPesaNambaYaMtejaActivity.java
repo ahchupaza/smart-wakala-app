@@ -9,7 +9,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.smartwakala.R;
@@ -31,6 +33,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
 
     EditText namba, kiasi;
     String mKiasi, mNamba;
+    private ProgressBar progressBar;
     long balance;
     long balanceMteja;
     String mtejaId;
@@ -48,29 +51,53 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
 
         namba = findViewById(R.id.customer_number_request);
         kiasi = findViewById(R.id.customer_amount_request);
+        progressBar = findViewById(R.id.tigopesa_weka_pesa_loading);
 
         bj = new BasicJobs();
         wakalaNamba = bj.getNumber(TigoPesaNambaYaMtejaActivity.this);
 
 
-        findViewById(R.id.customer_number_submit_button).setOnClickListener(view -> {
+        findViewById(R.id.tigo_customer_number_submit_button).setOnClickListener(view -> {
 
             if (namba.getText().toString().isEmpty()){
-                namba.setError("Ingiza namba");
+                namba.setError("Hujaingiza namba!");
+                namba.requestFocus();
+
+                return;
+            }
+            if (namba.length() < 10){
+                namba.setError("Tarakimu hazijakamilika 10!");
                 namba.requestFocus();
 
                 return;
             }
 
             if (kiasi.getText().toString().isEmpty()){
-                kiasi.setError("Ingiza kiasi");
+                kiasi.setError("Hujaingiza kiasi!");
                 kiasi.requestFocus();
 
                 return;
             }
 
-            mKiasi = kiasi.getText().toString();
             mNamba = namba.getText().toString();
+            mKiasi = kiasi.getText().toString();
+
+            int x = Integer.parseInt(mKiasi);
+
+            if (x < 1000){
+                kiasi.setError("Kiwango cha chini 1,000/-");
+                kiasi.requestFocus();
+
+                return;
+            }
+
+            if (!(mNamba.startsWith("065") || mNamba.startsWith("067") || mNamba.startsWith("071"))) {
+                namba.setError("Namba siyo ya Tigo!");
+                namba.requestFocus();
+
+                return;
+            }
+            else {
 
             boolean inatosha = checkBalance(mKiasi);
 
@@ -82,8 +109,8 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
 
                 new AlertDialog.Builder(TigoPesaNambaYaMtejaActivity.this)
                         .setTitle("Thibitisha Muamala")
-                        .setMessage("Unatuma kiasi cha Tsh." + kiasi.getText().toString() +
-                                " kwenda kwa " + fullname + "? ")
+                        .setMessage("Unakaribia kutuma kiasi cha Tsh." + kiasi.getText().toString() +
+                                " kwenda kwa " + fullname + "! ")
 
                         // Specifying a listener allows you to take an action before dismissing the dialog.
                         // The dialog is automatically dismissed when a dialog button is clicked.
@@ -109,10 +136,11 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .show();
 
+//                progressBar.setVisibility(View.VISIBLE);
+
             }
 
-
-
+            }
 
         });
     }
@@ -130,7 +158,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
 
             new AlertDialog.Builder(TigoPesaNambaYaMtejaActivity.this)
                     .setTitle("Thibitisha Muamala")
-                    .setMessage("Muamala umefanikiwa")
+                    .setMessage("Muamala umefanikiwa!")
 
                     // Specifying a listener allows you to take an action before dismissing the dialog.
                     // The dialog is automatically dismissed when a dialog button is clicked.
@@ -147,7 +175,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                     .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Toast.makeText(TigoPesaNambaYaMtejaActivity.this, "Muamala haujafanikiwa", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(TigoPesaNambaYaMtejaActivity.this, "Muamala haujafanikiwa!", Toast.LENGTH_LONG).show();
                         }
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -189,7 +217,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
 
                             new AlertDialog.Builder(TigoPesaNambaYaMtejaActivity.this)
                                     .setTitle("Thibitisha Muamala")
-                                    .setMessage("Salio halitoshi")
+                                    .setMessage("Hauna salio la kutosha kufanya muamala huu!")
 
                                     // Specifying a listener allows you to take an action before dismissing the dialog.
                                     // The dialog is automatically dismissed when a dialog button is clicked.
@@ -199,7 +227,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
                                     .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialogInterface, int i) {
-                                            Toast.makeText(TigoPesaNambaYaMtejaActivity.this, "Muamala haujafanikiwa", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(TigoPesaNambaYaMtejaActivity.this, "Muamala haujafanikiwa!", Toast.LENGTH_SHORT).show();
                                             finish();
                                         }
                                     })
@@ -275,7 +303,7 @@ public class TigoPesaNambaYaMtejaActivity extends AppCompatActivity {
         hopperUpdates.put("Balance", balanceMteja);
 
         mDatabaseRef.updateChildren(hopperUpdates).addOnSuccessListener(unused -> {
-            Toast.makeText(this, "Mteja balance updated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Salio la mteja limesahihishwa!", Toast.LENGTH_SHORT).show();
         });
 
         finish();

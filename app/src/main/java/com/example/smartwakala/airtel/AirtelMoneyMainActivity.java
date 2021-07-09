@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.example.smartwakala.R;
+import com.example.smartwakala.tigo.TigoPesaMainActivity;
+import com.example.smartwakala.tigo.TigoPesaWakalaKutoaBenkiActivity;
 
 import static android.util.Log.d;
 
@@ -59,9 +62,11 @@ public class AirtelMoneyMainActivity extends AppCompatActivity {
                     Intent goToAirtelMoneyAkauntiYanguActivity= new Intent(AirtelMoneyMainActivity.this, AirtelMoneyAkauntiYanguActivity.class);
                     startActivity(goToAirtelMoneyAkauntiYanguActivity);
                 }
+                else if (airtel_rejesha_muamala.isChecked()){
+                    startActivity(new Intent(AirtelMoneyMainActivity.this, AirtelMoneyRejeshaMuamalaActivity.class));
+                }
                 else {
-                    Intent goToAirtelMoneyRejeshaMuamalaActivity= new Intent(AirtelMoneyMainActivity.this, AirtelMoneyRejeshaMuamalaActivity.class);
-                    startActivity(goToAirtelMoneyRejeshaMuamalaActivity);
+                    Toast.makeText(getApplicationContext(), "Haujafanya chaguo lolote!", Toast.LENGTH_LONG).show();
                 }
             }
         });
